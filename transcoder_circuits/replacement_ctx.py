@@ -5,8 +5,18 @@ class TranscoderWrapper(torch.nn.Module):
     def __init__(self, transcoder):
         super().__init__()
         self.transcoder = transcoder
+        self.hidden_acts = None
     def forward(self, x):
-        return self.transcoder(x)[0]
+
+        output, hidden_acts, _, _, _, _ = self.transcoder(x)
+        self.hidden_acts = hidden_acts
+        
+        return output
+
+        # print("hidden_acts:", hidden_acts)
+        # print("hidden_acts shape:", hidden_acts.shape)
+        
+        # return self.transcoder(x)[0]
 
 class TranscoderReplacementContext:
     def __init__(self, model, transcoders):
