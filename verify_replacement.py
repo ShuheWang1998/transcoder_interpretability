@@ -10,10 +10,10 @@ import numpy as np
 
 model = HookedTransformer.from_pretrained('gpt2')
 
-
+sub_transcoders_num = 12
 transcoder_template = "/data/projects/punim2522/models/gpt2-transcoders/final_sparse_autoencoder_gpt2-small_blocks.{}.ln2.hook_normalized_24576"
 transcoders = []
-for i in range(11):
+for i in range(sub_transcoders_num):
     transcoders.append(SparseAutoencoder.load_from_pretrained(f"{transcoder_template.format(i)}.pt").eval())
 
 
@@ -38,8 +38,6 @@ logits_before_replacement = model(tokens_arr)
 
 print("logits_before_replacement shape:", logits_before_replacement.shape)
 
-
-sub_transcoders_num = 12
 
     
 for transcoder in transcoders[:sub_transcoders_num]:

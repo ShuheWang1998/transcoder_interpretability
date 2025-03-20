@@ -2,14 +2,17 @@
 import torch
 
 class TranscoderWrapper(torch.nn.Module):
-    def __init__(self, transcoder):
+    def __init__(self, transcoder, layer=None):
         super().__init__()
         self.transcoder = transcoder
         self.hidden_acts = None
+        self.additional_gradients = None
+        self.out = None
     def forward(self, x):
 
-        output, hidden_acts, _, _, _, _ = self.transcoder(x)
+        output, hidden_acts, _, _, _, _ = self.transcoder(x, additional_gradients=self.additional_gradients)
         self.hidden_acts = hidden_acts
+        self.out = output
         
         return output
 
