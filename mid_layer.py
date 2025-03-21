@@ -32,8 +32,11 @@ sub_transcoders_num = 12
 # prompt_answer = (" John", " Mary")
 
 
+# prompt = "In the hotel laundry room, Emma burned Mary's shirt, so the manager scolded"
+# prompt_answer = (" Emma", " Mary")
+
 prompt = "In the hotel laundry room, Emma burned Mary's shirt, so the manager scolded"
-prompt_answer = (" Emma", " Mary")
+prompt_answer = (" Mary", " Emma")
 
 
 
@@ -227,7 +230,7 @@ print("logits[:, -1, answer_token_indices[0, 1]]: ", logits[:, -1, answer_token_
 # print("model.residual: ", model.residual)
 
 
-view_layer = 3
+view_layer = 11
 
 print("model.blocks[view_layer].residual shape: ", model.blocks[view_layer].residual.shape)
 
@@ -244,29 +247,49 @@ print("mid_layer_token[:, -1, answer_token_indices[0, 0]]: ", mid_layer_token[:,
 print("mid_layer_token[:, -1, answer_token_indices[0, 1]]: ", mid_layer_token[:, -1, answer_token_indices[0, 1]])
 
 
-
-# layer 1
-# values=tensor([13.6632, 13.2253, 12.7099, 12.4926, 12.2588, 12.0741, 12.0574, 11.8105,
-#         11.7825, 11.7482, 11.6168, 11.5019, 11.4875, 11.3864, 11.3534, 11.2308,
-#         11.2061, 11.1259, 11.0051, 10.9555], device='cuda:0',
+# layer 11
+# values=tensor([15.5266, 13.3825, 13.1565, 12.8904, 12.8815, 12.8694, 12.6025, 12.4857,
+#         12.2756, 12.0788, 11.9020, 11.8905, 11.7196, 11.6295, 11.3702, 11.3282,
+#         11.1670, 11.1551, 10.7514, 10.6902], device='cuda:0',
 #        grad_fn=<TopkBackward0>),
-# indices=tensor([  683,    11,   416,   465, 21948,   262, 46838,   422, 40618,   607,
-#           284,   290,   329, 34313,   534,  1028,   326,   351,   340,   379],
+# indices=tensor([  607,   683,   262,    11,    13,  5335, 18966,   502,   290,   606,
+#           326,   673,   340,   514,   284,   345,   465,   257,   329,  9074],
 #        device='cuda:0'))
-# top 20 words:  ['Ġhim', ',', 'Ġby', 'Ġhis', 'ĠRarity', 'Ġthe', 'ĠCartoon', 'Ġfrom', 'Ġmerciless', 'Ġher', 'Ġto', 'Ġand', 'Ġfor', 'Ġpolitely', 'Ġyour', 'Ġagainst', 'Ġthat', 'Ġwith', 'Ġit', 'Ġat']
-# mid_layer_token[:, -1, answer_token_indices[0, 0]]:  tensor([4.1657], device='cuda:0', grad_fn=<SelectBackward0>)
-# mid_layer_token[:, -1, answer_token_indices[0, 1]]:  tensor([5.6849], device='cuda:0', grad_fn=<SelectBackward0>)
+# top 20 words:  ['Ġher', 'Ġhim', 'Ġthe', ',', '.', 'ĠMary', 'ĠEmma', 'Ġme', 'Ġand', 'Ġthem', 'Ġthat', 'Ġshe', 'Ġit', 'Ġus', 'Ġto', 'Ġyou', 'Ġhis', 'Ġa', 'Ġfor', 'ĠMrs']
+# mid_layer_token[:, -1, answer_token_indices[0, 0]]:  tensor([12.8694], device='cuda:0', grad_fn=<SelectBackward0>)
+# mid_layer_token[:, -1, answer_token_indices[0, 1]]:  tensor([12.6025], device='cuda:0', grad_fn=<SelectBackward0>)
 
-
-
-# layer 2
-# values=tensor([15.0466, 14.8317, 14.8309, 13.6953, 13.3739, 13.1521, 13.1280, 12.7836,
-#         12.7302, 12.6896, 12.6270, 12.5902, 12.4140, 12.2320, 12.2137, 12.1976,
-#         12.1174, 11.9687, 11.9514, 11.9022], device='cuda:0',
+# layer 10
+# values=tensor([21.4720, 20.4978, 18.6292, 18.3504, 17.6629, 16.7362, 16.4214, 16.2560,
+#         16.1740, 16.1373, 15.7858, 15.7215, 15.4707, 15.3962, 15.3255, 14.8414,
+#         14.3543, 14.2681, 14.1767, 14.0806], device='cuda:0',
 #        grad_fn=<TopkBackward0>),
-# indices=tensor([  683,   465,    11,   416,   607,   422,   262,   326,   284,   329,
-#           351,   290, 34425,   625,   287, 34313,  2241,    13, 48959,  1028],
+# indices=tensor([  683,   607,   502,   606,   514,  5335,   262,    11,    13, 18966,
+#           465,   340,   326,   345,   290,  5223,   673,   284,  5850,  9074],
 #        device='cuda:0'))
-# top 20 words:  ['Ġhim', 'Ġhis', ',', 'Ġby', 'Ġher', 'Ġfrom', 'Ġthe', 'Ġthat', 'Ġto', 'Ġfor', 'Ġwith', 'Ġand', 'Ġangrily', 'Ġover', 'Ġin', 'Ġpolitely', 'Ġhimself', '.', 'olded', 'Ġagainst']
-# mid_layer_token[:, -1, answer_token_indices[0, 0]]:  tensor([5.5611], device='cuda:0', grad_fn=<SelectBackward0>)
-# mid_layer_token[:, -1, answer_token_indices[0, 1]]:  tensor([6.4851], device='cuda:0', grad_fn=<SelectBackward0>)
+# top 20 words:  ['Ġhim', 'Ġher', 'Ġme', 'Ġthem', 'Ġus', 'ĠMary', 'Ġthe', ',', '.', 'ĠEmma', 'Ġhis', 'Ġit', 'Ġthat', 'Ġyou', 'Ġand', 'Ġherself', 'Ġshe', 'Ġto', 'ĠHarry', 'ĠMrs']
+# mid_layer_token[:, -1, answer_token_indices[0, 0]]:  tensor([16.7362], device='cuda:0', grad_fn=<SelectBackward0>)
+# mid_layer_token[:, -1, answer_token_indices[0, 1]]:  tensor([16.1373], device='cuda:0', grad_fn=<SelectBackward0>)
+
+# layer 9
+# values=tensor([25.5988, 22.1138, 21.7901, 21.3687, 20.5372, 18.0081, 17.7646, 17.5504,
+#         17.3934, 17.1667, 16.8742, 16.5807, 16.5184, 16.1165, 16.0726, 15.8565,
+#         15.5577, 15.4451, 14.9794, 14.9603], device='cuda:0',
+#        grad_fn=<TopkBackward0>),
+# indices=tensor([  683,   502,   606,   607,   514,   465,   345,   340,   262,    13,
+#            11,   326,  2241,  5223,   290,  5335,  2506,  5850,   616, 18966],
+#        device='cuda:0'))
+# top 20 words:  ['Ġhim', 'Ġme', 'Ġthem', 'Ġher', 'Ġus', 'Ġhis', 'Ġyou', 'Ġit', 'Ġthe', '.', ',', 'Ġthat', 'Ġhimself', 'Ġherself', 'Ġand', 'ĠMary', 'Ġeveryone', 'ĠHarry', 'Ġmy', 'ĠEmma']
+# mid_layer_token[:, -1, answer_token_indices[0, 0]]:  tensor([15.8565], device='cuda:0', grad_fn=<SelectBackward0>)
+# mid_layer_token[:, -1, answer_token_indices[0, 1]]:  tensor([14.9603], device='cuda:0', grad_fn=<SelectBackward0>)
+
+# layer 8
+# values=tensor([24.6307, 20.4069, 19.6077, 18.6731, 18.0037, 17.1616, 17.0327, 16.8545,
+#         16.7324, 16.5268, 16.1578, 16.1118, 15.5392, 15.1575, 15.0140, 14.9165,
+#         14.8737, 14.7990, 14.6091, 14.4826], device='cuda:0',
+#        grad_fn=<TopkBackward0>),
+# indices=tensor([ 683,  606,  607,  502,  465,  514,  340,  326,  262,   11,  345,   13,
+#          290, 2506,  284, 2241, 8453,  503,  616, 5850], device='cuda:0'))
+# top 20 words:  ['Ġhim', 'Ġthem', 'Ġher', 'Ġme', 'Ġhis', 'Ġus', 'Ġit', 'Ġthat', 'Ġthe', ',', 'Ġyou', '.', 'Ġand', 'Ġeveryone', 'Ġto', 'Ġhimself', 'Ġapolog', 'Ġout', 'Ġmy', 'ĠHarry']
+# mid_layer_token[:, -1, answer_token_indices[0, 0]]:  tensor([12.7765], device='cuda:0', grad_fn=<SelectBackward0>)
+# mid_layer_token[:, -1, answer_token_indices[0, 1]]:  tensor([11.3373], device='cuda:0', grad_fn=<SelectBackward0>)

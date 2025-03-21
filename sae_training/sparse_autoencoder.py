@@ -127,18 +127,26 @@ class SparseAutoencoder(HookedRootModule):
         # if additional_gradients is not None:
         #     feature_acts = self.hook_hidden_post(feature_acts + additional_gradients)
 
+        # if additional_gradients is not None:
+        #     feature_acts = self.hook_hidden_post(
+        #         torch.nn.functional.relu(
+        #             hidden_pre + additional_gradients
+        #         )
+        #     )
+        # else:
+        #     feature_acts = self.hook_hidden_post(
+        #         torch.nn.functional.relu(
+        #             hidden_pre
+        #         )
+        #     )
+        feature_acts = self.hook_hidden_post(torch.nn.functional.relu(hidden_pre))
         if additional_gradients is not None:
             feature_acts = self.hook_hidden_post(
                 torch.nn.functional.relu(
                     hidden_pre + additional_gradients
                 )
             )
-        else:
-            feature_acts = self.hook_hidden_post(
-                torch.nn.functional.relu(
-                    hidden_pre
-                )
-            )
+
 
         
 
@@ -199,8 +207,8 @@ class SparseAutoencoder(HookedRootModule):
         l1_loss = self.l1_coefficient * sparsity
         loss = mse_loss + l1_loss + mse_loss_ghost_resid
 
-        # return sae_out, feature_acts, loss, mse_loss, l1_loss, mse_loss_ghost_resid
-        return sae_out, hidden_pre, loss, mse_loss, l1_loss, mse_loss_ghost_resid
+        return sae_out, feature_acts, loss, mse_loss, l1_loss, mse_loss_ghost_resid
+        # return sae_out, hidden_pre, loss, mse_loss, l1_loss, mse_loss_ghost_resid
 
     def get_sparse_connection_loss(self):
         dots = self.spacon_sae_W_dec @ self.W_dec.T
