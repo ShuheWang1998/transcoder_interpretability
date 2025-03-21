@@ -100,7 +100,7 @@ def apply_gradient(model, grads, change_layers, change_layer_multipliers):
     return model
 
 
-def update_model(model, logits, tokens_arr, answer_token_indices, grads, change_layers, change_layer_multipliers, repeat_times=1):
+def update_model(model, transcoders, logits, tokens_arr, answer_token_indices, grads, change_layers, change_layer_multipliers, repeat_times=1):
     logits[:, -1, answer_token_indices[0, 1]].backward()
 
     model = apply_gradient(model=model, grads=grads, change_layers=change_layers, change_layer_multipliers=change_layer_multipliers)
@@ -108,7 +108,13 @@ def update_model(model, logits, tokens_arr, answer_token_indices, grads, change_
     logits = model(tokens_arr)
 
     for _ in range(1, repeat_times):
+        grads = {}
+        model, grads = save_gradient(model=model, transcoders=transcoders, grads=grads)
+        model.zero_grad()
+
         logits[:, -1, answer_token_indices[0, 1]].backward()
+
+        # print("grads[0]:", grads[0])
 
         model = apply_gradient(model=model, grads=grads, change_layers=change_layers, change_layer_multipliers=change_layer_multipliers)
 
@@ -137,7 +143,7 @@ if __name__ == "__main__":
     change_layer_multipliers = [1 for i in range(sub_transcoders_num)]
     save_grads = True
     view_gradient_layer = 11
-    repeat_times = 2
+    repeat_times = 1
 
     prompt = "In the hotel laundry room, Emma burned Mary's shirt, so the manager scolded"
     prompt_answer = (" Mary", " Emma")
@@ -177,14 +183,13 @@ if __name__ == "__main__":
     print("incorrect logits before applying gradient:", logits[:, -1, answer_token_indices[0, 1]])
 
 
-    model, logits = update_model(model=model, logits=logits, tokens_arr=tokens_arr, answer_token_indices=answer_token_indices, grads=grads, change_layers=change_layers, change_layer_multipliers=change_layer_multipliers, repeat_times=repeat_times)
+    model, logits = update_model(model=model, transcoders=transcoder, logits=logits, tokens_arr=tokens_arr, answer_token_indices=answer_token_indices, grads=grads, change_layers=change_layers, change_layer_multipliers=change_layer_multipliers, repeat_times=repeat_times)
 
-    normalized_gradient = normalize_gradient(model=model, grads=grads)
-
+    # normalized_gradient = normalize_gradient(model=model, grads=grads)
 
     print(f"grads[{view_gradient_layer}].shape: ", grads[view_gradient_layer].shape)
 
-    print("normalized_gradient: ", normalized_gradient)
+    # print("normalized_gradient: ", normalized_gradient)
 
     print("logits shape after applying gradient:", logits.shape)
 
