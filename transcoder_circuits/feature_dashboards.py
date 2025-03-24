@@ -32,8 +32,10 @@ def get_feature_scores(model, encoder, tokens_arr, feature_idx, batch_size=64, a
 				cur_scores = hidden_acts[:, feature_idx]
 			if ignore_endoftext:
 					cur_scores[tokens_arr[i:i+batch_size].reshape(-1) == endoftext_token] = -torch.inf
-		scores.append(to_numpy(cur_scores.reshape(-1, tokens_arr.shape[1])).astype(np.float16))
-	return np.concatenate(scores)
+		scores.append(cur_scores.reshape(-1, tokens_arr.shape[1]))
+        
+          
+	return torch.cat(scores)
 
 # get indices and values at uniform percentiles of arr
 def sample_percentiles(arr, num_samples):
