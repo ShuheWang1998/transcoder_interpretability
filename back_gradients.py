@@ -294,7 +294,7 @@ def update_algorithm_node_v1(model, tokens_arr, answer_token_indices, sub_transc
             if grads[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] > 0:
                 alpha_ = frequencies[layer_idx][top_m_gradients_indices[i][1]] + range_n * sigma_[layer_idx][top_m_gradients_indices[i][1]]
             else:
-                alpha_ = frequencies[layer_idx][top_m_gradients_indices[i][1]] - range_n * sigma_[layer_idx][top_m_gradients_indices[i][1]]
+                alpha_ = frequencies[layer_idx][top_m_gradients_indices[i][1]] + range_n * sigma_[layer_idx][top_m_gradients_indices[i][1]]
 
             change_layer_multipliers[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] = alpha_
             # tmp_alpha.append(alpha_)
@@ -340,7 +340,8 @@ if __name__ == "__main__":
     view_gradient_layer = 0
     repeat_times = 1
     top_k_features_each_layer = 1000
-    top_m_gradients_each_layer = 10000
+    # top_m_gradients_each_layer = 24576
+    top_m_gradients_each_layer = 5000
     range_n = 5
 
     # prompt = "The first name of the person Donald Trump is"
