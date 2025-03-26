@@ -56,7 +56,7 @@ def compute_sigma(frequencies):
     sigma_ = []
     token_num = 9102780416
     for layer_ in range(int(frequencies.shape[0])):
-        print(f"layer_: {layer_}")
+        # print(f"layer_: {layer_}")
         path = f"/data/projects/punim2522/models/gpt2-transcoders/sigma/{layer_}.pt"
         if os.path.exists(path):
             sub_sigma = torch.load(path)
@@ -69,6 +69,7 @@ def compute_sigma(frequencies):
                 current_sigma = torch.sqrt(current_sigma / token_num)
                 sub_sigma.append(current_sigma.view(1, 1))
             torch.save(sub_sigma, path)
+        # print("top 20 sigma[{}]:".format(layer_), torch.topk(torch.cat(sub_sigma).view(1, -1), k=5))
         sigma_.append(torch.cat(sub_sigma).view(1, -1))
 
     # print(sigma_)
@@ -86,6 +87,11 @@ def load_frequencies(frequences_path, sub_transcoders_num):
     frequencies = torch.stack(frequencies)
     # print("frequencies[0][:20]:", frequencies[0][:20])
     frequencies = torch.pow(10, frequencies)
+
+    # for i in range(sub_transcoders_num):
+    #     print("frequencies[{}].shape:".format(i), frequencies[i].shape)
+    #     print("sum(frequencies[{}])".format(i), torch.sum(frequencies[i]))
+    #     print("top 20 frequencies[{}]:".format(i), torch.topk(frequencies[i], k=5))
     
     # print("frequencies.shape:", frequencies.shape)
     # print("frequencies[0][:20]:", frequencies[0][:20])
@@ -166,6 +172,14 @@ def apply_gradient(model, grads, change_layers, change_layer_multipliers):
     return model
 
 
+def apply_gradient_with_one_layer(model, grads, change_layer, change_layer_multipliers):
+    model.blocks[change_layer].mlp.additional_gradients = grads[change_layer] * change_layer_multipliers[change_layer]
+    model.blocks[change_layer].mlp.additional_gradients.requires_grad = False
+
+    
+    return model
+
+
 def update_model(model, transcoders, logits, tokens_arr, answer_token_indices, grads, change_layers, change_layer_multipliers, repeat_times=1):
     logits[:, -1, answer_token_indices[0, 1]].backward()
 
@@ -241,34 +255,39 @@ def update_algorithm_node_v1(model, tokens_arr, answer_token_indices, sub_transc
             print("logits shape:", logits.shape)
             print("top 20 logits:", torch.topk(logits[0, -1], k=20))
             print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
-
+            print("correct logits:", logits[:, -1, answer_token_indices[0]])
         grads = {}
         model, grads = save_gradient(model=model, transcoders=transcoders, grads=grads)
         model.zero_grad()
 
         
-        top_k_features_values, top_k_features_indices = top_k_features(model=model, layer=layer_idx, k=top_k_features_each_layer)
+        # top_k_features_values, top_k_features_indices = top_k_features(model=model, layer=layer_idx, k=top_k_features_each_layer)
 
-        # print(f"layer {layer_idx} top {top_k_features_each_layer} features:", top_k_features_values)
-        # print(f"layer {layer_idx} top {top_k_features_each_layer} features indices:", top_k_features_indices)
+        # print(f"layer {layer_idx} top {top_k_features_each_layer} features:", top_k_features_values[:5])
+        # print(f"layer {layer_idx} top {top_k_features_each_layer} features indices:", top_k_features_indices[:5])
     
         logits[:, -1, answer_token_indices[0]].backward()
 
-        sub_grads = torch.zeros_like(torch.randn(sub_transcoders_num, grads[0].shape[0], grads[0].shape[1], grads[0].shape[2]))
-        for i in range(top_k_features_each_layer):
-            sub_grads[layer_idx][0][top_k_features_indices[i][0], top_k_features_indices[i][1]] = grads[layer_idx][0][top_k_features_indices[i][0], top_k_features_indices[i][1]]
+        sub_grads = grads
+        # sub_grads = torch.zeros_like(torch.randn(sub_transcoders_num, grads[0].shape[0], grads[0].shape[1], grads[0].shape[2]))
+        # for i in range(top_k_features_each_layer):
+        #     sub_grads[layer_idx][0][top_k_features_indices[i][0], top_k_features_indices[i][1]] = grads[layer_idx][0][top_k_features_indices[i][0], top_k_features_indices[i][1]]
 
         # print("sub_grads[0].shape:", sub_grads[0].shape)
 
         top_m_gradients_values, top_m_gradients_indices = top_m_gradients(grads=sub_grads, layer=layer_idx, m=top_m_gradients_each_layer, is_abs=True)
 
-        # print(f"layer {layer_idx} top {top_m_gradients_each_layer} gradients:", top_m_gradients_values)
-        # print(f"layer {layer_idx} top {top_m_gradients_each_layer} gradients indices:", top_m_gradients_indices)
+        # print(f"layer {layer_idx} top {top_m_gradients_each_layer} gradients:", top_m_gradients_values[:5])
+        # print(f"layer {layer_idx} top {top_m_gradients_each_layer} gradients indices:", top_m_gradients_indices[:5])
         # print(grads[layer_idx][0][9, 5545])
         # print(grads[layer_idx][0][7, 9886])
 
-        applied_gradients = torch.zeros_like(sub_grads)
-        change_layer_multipliers = torch.zeros_like(sub_grads)
+        # applied_gradients = torch.zeros_like(sub_grads)
+        # change_layer_multipliers = torch.zeros_like(sub_grads)
+        applied_gradients = torch.zeros_like(torch.randn(sub_transcoders_num, grads[0].shape[0], grads[0].shape[1], grads[0].shape[2]))
+        change_layer_multipliers = torch.zeros_like(torch.randn(sub_transcoders_num, grads[0].shape[0], grads[0].shape[1], grads[0].shape[2]))
+        # tmp_alpha = []
+        # tmp_grads = []
         for i in range(top_m_gradients_each_layer):
             applied_gradients[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] = grads[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]]
 
@@ -278,9 +297,26 @@ def update_algorithm_node_v1(model, tokens_arr, answer_token_indices, sub_transc
                 alpha_ = frequencies[layer_idx][top_m_gradients_indices[i][1]] - range_n * sigma_[layer_idx][top_m_gradients_indices[i][1]]
 
             change_layer_multipliers[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] = alpha_
-            # print(frequencies[layer_idx][top_m_gradients_indices[i][1]], range_n, sigma_[layer_idx][top_m_gradients_indices[i][1]], alpha_)
+            # tmp_alpha.append(alpha_)
+            # tmp_grads.append(grads[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]])
+            # if i < 4:
+            #     print(frequencies[layer_idx][top_m_gradients_indices[i][1]], range_n, sigma_[layer_idx][top_m_gradients_indices[i][1]], alpha_, grads[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]], applied_gradients[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]])
+        
+        # tmp_alpha = torch.tensor(tmp_alpha)
+        # tmp_grads = torch.tensor(tmp_grads)
+        # print("top 20 abs alpha:", torch.topk(torch.abs(tmp_alpha), k=5))
+        # print("top 20 grads:", torch.topk(torch.abs(tmp_grads), k=5))
 
-        model = apply_gradient(model=model, grads=applied_gradients.cuda(), change_layers=[layer_idx], change_layer_multipliers=change_layer_multipliers.cuda())
+        # tmp_values, tmp_indices = top_m_gradients(grads=change_layer_multipliers, layer=layer_idx, m=5, is_abs=True)
+
+        # print("top 5 abs change_layer_multipliers:", tmp_values)
+        # print("top 5 change_layer_multipliers indices:", tmp_indices)
+
+        # for i in range(5):
+        #     print(applied_gradients[layer_idx][0][tmp_indices[i][0], tmp_indices[i][1]], change_layer_multipliers[layer_idx][0][tmp_indices[i][0], tmp_indices[i][1]], model.blocks[layer_idx].mlp.hidden_acts[0][tmp_indices[i][0], tmp_indices[i][1]], tmp_indices[i][0], tmp_indices[i][1], frequencies[layer_idx][tmp_indices[i][1]], sigma_[layer_idx][tmp_indices[i][1]])
+
+        model = apply_gradient_with_one_layer(model=model, grads=applied_gradients.cuda(), change_layer=layer_idx, change_layer_multipliers=change_layer_multipliers.cuda())
+        # model = apply_gradient(model=model, grads=applied_gradients.cuda(), change_layers=[layer_idx], change_layer_multipliers=change_layer_multipliers.cuda())
 
     return model
         
@@ -303,8 +339,8 @@ if __name__ == "__main__":
     save_grads = True
     view_gradient_layer = 0
     repeat_times = 1
-    top_k_features_each_layer = 20
-    top_m_gradients_each_layer = 20
+    top_k_features_each_layer = 1000
+    top_m_gradients_each_layer = 10000
     range_n = 5
 
     # prompt = "The first name of the person Donald Trump is"
@@ -344,6 +380,8 @@ if __name__ == "__main__":
     print("top 20 logits:", torch.topk(logits[0, -1], k=20))
 
     print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
+
+    print("correct logits:", logits[:, -1, answer_token_indices[0]])
 
 
     # model, grads = save_gradient(model=model, transcoders=transcoder, grads=grads)

@@ -143,7 +143,7 @@ class SparseAutoencoder(HookedRootModule):
         if additional_gradients is not None:
             feature_acts = self.hook_hidden_post(
                 torch.nn.functional.relu(
-                    hidden_pre + additional_gradients
+                    feature_acts + additional_gradients
                 )
             )
 
