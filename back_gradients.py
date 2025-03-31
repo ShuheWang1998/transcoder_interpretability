@@ -221,6 +221,17 @@ def top_m_gradients(grads, layer, m=20, is_abs=True):
     return values, indices
 
 
+def top_m_gradients_v2(grads, m=20, is_abs=True):
+    if is_abs:
+        values, i = torch.topk(torch.abs(grads.flatten()), k=m)
+    else:
+        values, i = torch.topk(grads.flatten(), k=m)
+
+    indices = torch.column_stack(torch.unravel_index(i, grads.shape))
+
+    return values, indices
+
+
 def show_features_words(model, layer, indices, vocab, top_tokens_each_feature=5):
     words = model.W_E @ model.blocks[layer].mlp.transcoder.W_enc[:, indices]
 
@@ -296,6 +307,7 @@ def update_algorithm_node_v1(model, tokens_arr, answer_token_indices, sub_transc
             else:
                 alpha_ = frequencies[layer_idx][top_m_gradients_indices[i][1]] + range_n * sigma_[layer_idx][top_m_gradients_indices[i][1]]
 
+            # change_layer_multipliers[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] = min(alpha_, 3)
             change_layer_multipliers[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] = alpha_
             # tmp_alpha.append(alpha_)
             # tmp_grads.append(grads[layer_idx][0][top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]])
@@ -319,9 +331,89 @@ def update_algorithm_node_v1(model, tokens_arr, answer_token_indices, sub_transc
         # model = apply_gradient(model=model, grads=applied_gradients.cuda(), change_layers=[layer_idx], change_layer_multipliers=change_layer_multipliers.cuda())
 
     return model
+
+
+def update_algorithm_node_v2(model, tokens_arr, answer_token_indices, sub_transcoders_num, top_m_gradients_each_layer, frequencies, sigma_, range_n):
+
+    for layer_idx in range(sub_transcoders_num):
+        logits = model(tokens_arr)
+
+        if layer_idx == 0:
+            print("logits shape:", logits.shape)
+            print("top 20 logits:", torch.topk(logits[0, -1], k=20))
+            print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
+            print("correct logits:", logits[:, -1, answer_token_indices[0]])
+        model.zero_grad()
+    
+        logits[:, -1, answer_token_indices[0]].backward()
+
+        top_m_gradients_values, top_m_gradients_indices = top_m_gradients_v2(grads=model.blocks[layer_idx].mlp.transcoder.W_enc.grad, m=top_m_gradients_each_layer, is_abs=True)
+
+
+        # print(f"layer {layer_idx} top {top_m_gradients_each_layer} gradients:", top_m_gradients_values[:5])
+        # print(f"layer {layer_idx} top {top_m_gradients_each_layer} gradients indices:", top_m_gradients_indices[:5])
+
+
+        applied_gradients = torch.zeros_like(model.blocks[layer_idx].mlp.transcoder.W_enc.grad)
+        change_layer_multipliers = torch.zeros_like(model.blocks[layer_idx].mlp.transcoder.W_enc.grad)
+
+
+        for i in range(top_m_gradients_each_layer):
+            applied_gradients[top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] = model.blocks[layer_idx].mlp.transcoder.W_enc.grad[top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]]
+
+            if model.blocks[layer_idx].mlp.transcoder.W_enc.grad[top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] > 0:
+                alpha_ = frequencies[layer_idx][top_m_gradients_indices[i][1]] + range_n * sigma_[layer_idx][top_m_gradients_indices[i][1]]
+            else:
+                alpha_ = frequencies[layer_idx][top_m_gradients_indices[i][1]] + range_n * sigma_[layer_idx][top_m_gradients_indices[i][1]]
+
+            change_layer_multipliers[top_m_gradients_indices[i][0], top_m_gradients_indices[i][1]] = alpha_
+
+        model.blocks[layer_idx].mlp.transcoder.W_enc.data = model.blocks[layer_idx].mlp.transcoder.W_enc.data + change_layer_multipliers * applied_gradients
+
+    return model
         
     
+def interactive_with_user(model):
+    while True:
+        prompt = input("Enter a prompt: ")
+        print("prompt:", prompt)
+        prompt_answer = input("Enter the answer: ")
+        print("prompt_answer:", prompt_answer)
+        prompt_answer = [prompt_answer]
 
+        tokens_arr = model.to_tokens(prompt)
+        
+        print("tokens_arr:", tokens_arr)
+
+        answer_token_indices = torch.tensor([model.to_single_token(prompt_answer[0])], device=model.cfg.device)
+
+        print("answer_token_indices:", answer_token_indices)
+
+        logits = model(tokens_arr)
+
+        print("logits shape:", logits.shape)
+
+        print("top 20 logits:", torch.topk(logits[0, -1], k=20))
+
+        print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
+
+        print("correct logits:", logits[:, -1, answer_token_indices[0]])
+
+
+        top_m_gradients_each_layer = int(input("Enter the top m gradients each layer: "))
+        range_n = int(input("Enter the range n: "))
+
+        update_algorithm_node_v2(model=model, tokens_arr=tokens_arr, answer_token_indices=answer_token_indices, sub_transcoders_num=sub_transcoders_num, top_m_gradients_each_layer=top_m_gradients_each_layer, frequencies=frequencies, sigma_=sigma_, range_n=range_n)
+
+        logits = model(tokens_arr)
+
+        print("logits shape:", logits.shape)
+
+        print("top 20 logits:", torch.topk(logits[0, -1], k=20))
+
+        print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
+
+        print("correct logits:", logits[:, -1, answer_token_indices[0]])
 
 
 
@@ -336,18 +428,25 @@ if __name__ == "__main__":
     sub_transcoders_num = 12
     change_layers = [i for i in range(sub_transcoders_num)]
     change_layer_multipliers = [1 for i in range(sub_transcoders_num)]
-    save_grads = True
+    save_grads = False
     view_gradient_layer = 0
     repeat_times = 1
     top_k_features_each_layer = 1000
     # top_m_gradients_each_layer = 24576
-    top_m_gradients_each_layer = 5000
+    top_m_gradients_each_layer = 2000
     range_n = 5
+    # 2000 7 work for most of examples
 
     # prompt = "The first name of the person Donald Trump is"
     # prompt_answer = (" Donald", " Trump")
-    prompt = "In the hotel laundry room, Emma burned Mary's shirt, so the manager scolded"
-    prompt_answer = (" Mary", " Emma")
+    # prompt_answer = (" Trump", " Donald")
+    # prompt_answer = (" Trump", " dog")
+    # prompt = "In the hotel laundry room, Emma burned Mary's shirt, so the manager scolded"
+    # prompt_answer = (" Mary", " Emma")
+    # prompt_answer = (" Emma", " Mary")
+    # prompt_answer = (" Emma", " dog")
+    prompt = "The number of r's in the word strawberry is:"
+    prompt_answer = (" he", " 3")
 
     # 看一下top feature具体代表的词
 
@@ -361,28 +460,30 @@ if __name__ == "__main__":
     # print("frequencies[0][:20]:", torch.pow(frequencies[0][:20], 10))
 
     model, grads = sub_transcoders_wrapper(model=model, transcoders=transcoder, sub_transcoders_num=sub_transcoders_num, save_grads=save_grads)
-    tokens_arr = model.to_tokens(prompt)
+
+    interactive_with_user(model=model)
+    # tokens_arr = model.to_tokens(prompt)
 
 
-    print("tokens_arr:", tokens_arr)
+    # print("tokens_arr:", tokens_arr)
 
-    answer_token_indices = torch.tensor([model.to_single_token(prompt_answer[1])], device=model.cfg.device)
+    # answer_token_indices = torch.tensor([model.to_single_token(prompt_answer[1])], device=model.cfg.device)
 
-    print("answer_token_indices:", answer_token_indices)
+    # print("answer_token_indices:", answer_token_indices)
 
-    update_algorithm_node_v1(model=model, tokens_arr=tokens_arr, answer_token_indices=answer_token_indices, sub_transcoders_num=sub_transcoders_num, top_k_features_each_layer=top_k_features_each_layer, top_m_gradients_each_layer=top_m_gradients_each_layer, transcoders=transcoder, frequencies=frequencies, sigma_=sigma_, range_n=range_n)
+    # update_algorithm_node_v2(model=model, tokens_arr=tokens_arr, answer_token_indices=answer_token_indices, sub_transcoders_num=sub_transcoders_num, top_m_gradients_each_layer=top_m_gradients_each_layer, frequencies=frequencies, sigma_=sigma_, range_n=range_n)
 
 
 
-    logits = model(tokens_arr)
+    # logits = model(tokens_arr)
 
-    print("logits shape:", logits.shape)
+    # print("logits shape:", logits.shape)
 
-    print("top 20 logits:", torch.topk(logits[0, -1], k=20))
+    # print("top 20 logits:", torch.topk(logits[0, -1], k=20))
 
-    print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
+    # print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
 
-    print("correct logits:", logits[:, -1, answer_token_indices[0]])
+    # print("correct logits:", logits[:, -1, answer_token_indices[0]])
 
 
     # model, grads = save_gradient(model=model, transcoders=transcoder, grads=grads)
