@@ -37,6 +37,27 @@ def get_feature_scores(model, encoder, tokens_arr, feature_idx, batch_size=64, a
           
 	return torch.cat(scores)
 
+
+def get_all_feature_scores(model, encoder, tokens_arr, batch_size=64, act_name='resid_pre'):
+	act_name = encoder.cfg.hook_point
+	layer = encoder.cfg.hook_point_layer
+		
+	scores = []
+	for i in range(0, tokens_arr.shape[0], batch_size):
+		with torch.no_grad():
+			_, cache = model.run_with_cache(tokens_arr[i:i+batch_size], stop_at_layer=layer+1, names_filter=[act_name])
+			mlp_acts = cache[act_name]
+			mlp_acts_flattened = mlp_acts.reshape(-1, encoder.W_enc.shape[0])
+			
+			_, hidden_acts, _, _, _, _ = encoder(mlp_acts_flattened)
+			cur_scores = hidden_acts
+               
+		scores = cur_scores
+        
+    
+	return scores
+
+
 # get indices and values at uniform percentiles of arr
 def sample_percentiles(arr, num_samples):
 	sample_idxs = []

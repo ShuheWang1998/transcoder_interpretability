@@ -1,0 +1,79 @@
+{"prompt": "In the hotel laundry room, Emma burned Mary's shirt, so the manager scolded", "correct_label": " Emma", "model_predict": " her", "id": 0}
+{"prompt": "During the lecture, John corrected Sarah's slide, so the professor smiled at", "correct_label": " John", "model_predict": " her", "id": 2}
+{"prompt": "In the kitchen, Lucy broke Olivia's bowl, so the chef sighed at", "correct_label": " Lucy", "model_predict": " her", "id": 3}
+{"prompt": "On the playground, Max returned Ben's toy, so the teacher praised", "correct_label": " Max", "model_predict": " him", "id": 4}
+{"prompt": "At the conference, Emma interrupted Rachel's talk, so the moderator warned", "correct_label": " Emma", "model_predict": " her", "id": 5}
+{"prompt": "In the garden, Lily watered Hannah's flowers, so the neighbor complimented", "correct_label": " Lily", "model_predict": " her", "id": 6}
+{"prompt": "At the airport, Ryan dropped Daniel's luggage, so the attendant assisted", "correct_label": " Ryan", "model_predict": " him", "id": 7}
+{"prompt": "During rehearsal, Kevin skipped Liam's part, so the director corrected", "correct_label": " Kevin", "model_predict": " him", "id": 8}
+{"prompt": "In the library, Mia reorganized Clara's shelf, so the librarian nodded at", "correct_label": " Mia", "model_predict": " her", "id": 9}
+{"prompt": "On the field, Noah blocked Jake's shot, so the coach congratulated", "correct_label": " Noah", "model_predict": " him", "id": 10}
+{"prompt": "In the office, Jacob saved Lily's document, so the manager appreciated", "correct_label": " Jacob", "model_predict": " it", "id": 12}
+{"prompt": "At the bus stop, Chloe spilled Sophia's coffee, so the driver frowned at", "correct_label": " Chloe", "model_predict": " her", "id": 13}
+{"prompt": "At the wedding, Grace fixed Emma's veil, so the bride hugged", "correct_label": " Grace", "model_predict": " her", "id": 14}
+{"prompt": "In the studio, Daniel moved Olivia's microphone, so the producer adjusted", "correct_label": " Daniel", "model_predict": " the", "id": 15}
+{"prompt": "At the picnic, Sarah squished Julia's sandwich, so the friend laughed with", "correct_label": " Sarah", "model_predict": " her", "id": 16}
+{"prompt": "During class, Ben answered Ava's question, so the teacher nodded to", "correct_label": " Ben", "model_predict": " him", "id": 17}
+{"prompt": "In the kitchen, Hannah dropped Ella's plate, so the host cleaned with", "correct_label": " Hannah", "model_predict": " a", "id": 18}
+{"prompt": "In the hallway, Leo tripped over Luke's backpack, so the principal asked", "correct_label": " Leo", "model_predict": " him", "id": 19}
+{"prompt": "On the plane, Nora borrowed Emma's blanket, so the flight attendant thanked", "correct_label": " Nora", "model_predict": " her", "id": 20}
+{"prompt": "At the event, Josh tore Kevin's banner, so the organizer glared at", "correct_label": " Josh", "model_predict": " him", "id": 21}
+{"prompt": "On the bus, Lily offered Mia her seat, so the teacher smiled at", "correct_label": " Lily", "model_predict": " her", "id": 22}
+{"prompt": "In the lab, Jason knocked over Noah's experiment, so the scientist warned", "correct_label": " Jason", "model_predict": " him", "id": 23}
+{"prompt": "In the studio, Emily sang Jessica's line, so the coach corrected", "correct_label": " Emily", "model_predict": " her", "id": 25}
+{"prompt": "At the hospital, Lucas unplugged Liam's monitor, so the nurse called", "correct_label": " Lucas", "model_predict": " him", "id": 26}
+{"prompt": "During the meeting, Rachel supported Anna's idea, so the manager praised", "correct_label": " Rachel", "model_predict": " her", "id": 27}
+{"prompt": "At the fair, Sarah dropped Emma's prize, so the vendor replaced it for", "correct_label": " Sarah", "model_predict": " her", "id": 28}
+{"prompt": "On the train, Ethan read Olivia's journal, so the conductor asked", "correct_label": " Ethan", "model_predict": " him", "id": 29}
+{"prompt": "On the path, Sam stepped on Chloe's map, so the guide redirected", "correct_label": " Sam", "model_predict": " to", "id": 31}
+{"prompt": "During the presentation, Leo advanced Mia's slide, so the speaker thanked", "correct_label": " Leo", "model_predict": " her", "id": 33}
+{"prompt": "At the game, Emma shouted over Lily's cheer, so the crowd hushed", "correct_label": " Emma", "model_predict": ".", "id": 34}
+{"prompt": "In the kitchen, Jack added salt to Zoe's soup, so the cook nodded at", "correct_label": " Jack", "model_predict": " her", "id": 35}
+{"prompt": "During study hall, Mia shared Chloe's answer, so the teacher reminded", "correct_label": " Mia", "model_predict": " her", "id": 37}
+{"prompt": "At the store, Jason paid for Jacob's snack, so the cashier thanked", "correct_label": " Jason", "model_predict": " him", "id": 40}
+{"prompt": "On the field, Aaron missed Matt's pass, so the coach instructed", "correct_label": " Aaron", "model_predict": " him", "id": 42}
+{"prompt": "At the meeting, Emma printed Maya's report, so the team clapped for", "correct_label": " Emma", "model_predict": " her", "id": 43}
+{"prompt": "At the science fair, Rachel lit Lily's volcano, so the judge smiled at", "correct_label": " Rachel", "model_predict": " her", "id": 45}
+{"prompt": "In the classroom, Jake erased Anna's board, so the teacher corrected", "correct_label": " Jake", "model_predict": " her", "id": 46}
+{"prompt": "At lunch, Grace mixed Emma's salad, so the chef chuckled at", "correct_label": " Grace", "model_predict": " her", "id": 47}
+{"prompt": "In the rehearsal room, Ben played Lily's melody, so the conductor praised", "correct_label": " Ben", "model_predict": " her", "id": 48}
+{"prompt": "In the office, Chloe muted Sarah's mic, so the host fixed it for", "correct_label": " Chloe", "model_predict": " her", "id": 49}
+{"prompt": "In the kitchen, Luke fried Ava's eggs, so the guest thanked", "correct_label": " Luke", "model_predict": " him", "id": 50}
+{"prompt": "On the hill, Sam rolled down Ella's sled, so the kids cheered for", "correct_label": " Sam", "model_predict": " her", "id": 51}
+{"prompt": "At the caf\u00e9, Kevin sang over Julia's guitar, so the owner signaled", "correct_label": " Kevin", "model_predict": " to", "id": 52}
+{"prompt": "At the play, Lily skipped Sarah's line, so the director corrected", "correct_label": " Lily", "model_predict": " her", "id": 55}
+{"prompt": "In the lobby, Emma signed Kate's form, so the receptionist welcomed", "correct_label": " Emma", "model_predict": " her", "id": 56}
+{"prompt": "At the bookstore, Leo misplaced Sophia's book, so the clerk guided", "correct_label": " Leo", "model_predict": " her", "id": 57}
+{"prompt": "During the hike, Chloe took Emma's compass, so the leader helped", "correct_label": " Chloe", "model_predict": " her", "id": 58}
+{"prompt": "On the balcony, Rachel moved Olivia's chair, so the host offered Rachel a", "correct_label": " cushion", "model_predict": " drink", "id": 59}
+{"prompt": "At the museum, Ben touched Nora's painting, so the guard gestured to", "correct_label": " Ben", "model_predict": " the", "id": 60}
+{"prompt": "At the lab, Ethan borrowed Lily's goggles, so the assistant noted", "correct_label": " Ethan", "model_predict": " that", "id": 62}
+{"prompt": "In the studio, Sarah rearranged Grace's props, so the director applauded", "correct_label": " Sarah", "model_predict": " her", "id": 63}
+{"prompt": "In the garden, Mia pruned Anna's roses, so the neighbor smiled at", "correct_label": " Mia", "model_predict": " her", "id": 64}
+{"prompt": "At the restaurant, Jason ate Emily's dessert, so the waiter offered Jason a", "correct_label": " menu", "model_predict": " glass", "id": 65}
+{"prompt": "In the hallway, Emma switched Lily's folder, so the teacher corrected", "correct_label": " Emma", "model_predict": " her", "id": 66}
+{"prompt": "In the gym, Jake unplugged Liam's treadmill, so the coach noticed", "correct_label": " Jake", "model_predict": " that", "id": 68}
+{"prompt": "In class, Ethan finished Chloe's quiz, so the teacher marked", "correct_label": " Ethan", "model_predict": " her", "id": 70}
+{"prompt": "During the break, Lily erased Ava's board, so the student stared at", "correct_label": " Lily", "model_predict": " her", "id": 71}
+{"prompt": "On the ride, Emma took Olivia's photo, so the guide smiled at", "correct_label": " Emma", "model_predict": " her", "id": 72}
+{"prompt": "At the exhibit, Rachel rearranged Zoe's models, so the artist nodded at", "correct_label": " Rachel", "model_predict": " her", "id": 73}
+{"prompt": "In the caf\u00e9, Liam spilled Kate's tea, so the manager offered Liam a", "correct_label": " towel", "model_predict": " cup", "id": 74}
+{"prompt": "At the ceremony, Kevin said Lily's line, so the audience applauded", "correct_label": " Kevin", "model_predict": ",", "id": 76}
+{"prompt": "On the plane, Jack leaned on Sarah's seat, so the attendant asked Jack to", "correct_label": " move", "model_predict": " sit", "id": 77}
+{"prompt": "In the salon, Mia chose Ava's color, so the stylist laughed with", "correct_label": " Mia", "model_predict": " her", "id": 78}
+{"prompt": "In the hallway, Leo knocked over Olivia's plant, so the janitor swept around", "correct_label": " Leo", "model_predict": " the", "id": 79}
+{"prompt": "At the beach, Zoe hid Hannah's sandals, so the parent called", "correct_label": " Zoe", "model_predict": " her", "id": 80}
+{"prompt": "At the pool, Ben used Ava's towel, so the lifeguard noticed", "correct_label": " Ben", "model_predict": " that", "id": 81}
+{"prompt": "On the field, Emma passed Mia's ball, so the coach clapped for", "correct_label": " Emma", "model_predict": " her", "id": 82}
+{"prompt": "During the test, Rachel looked at Ella's paper, so the proctor warned", "correct_label": " Rachel", "model_predict": " her", "id": 84}
+{"prompt": "At the lab, Kevin labeled Lily's slides, so the scientist corrected", "correct_label": " Kevin", "model_predict": " her", "id": 85}
+{"prompt": "In the kitchen, Jake reused Emma's bowl, so the chef noted", "correct_label": " Jake", "model_predict": " that", "id": 89}
+{"prompt": "On the boat, Lily wore Zoe's vest, so the captain warned", "correct_label": " Lily", "model_predict": " her", "id": 90}
+{"prompt": "During the quiz, Lucas changed Rachel's answer, so the teacher reminded", "correct_label": " Lucas", "model_predict": " her", "id": 91}
+{"prompt": "At dinner, Sarah shared Emma's story, so the host thanked", "correct_label": " Sarah", "model_predict": " her", "id": 92}
+{"prompt": "In the dorm, Ethan took Lily's towel, so the roommate shouted at", "correct_label": " Ethan", "model_predict": " her", "id": 93}
+{"prompt": "During training, Emma helped Mia's form, so the trainer nodded at", "correct_label": " Emma", "model_predict": " her", "id": 95}
+{"prompt": "In the living room, Jack unplugged Zoe's game, so the sibling stared at", "correct_label": " Jack", "model_predict": " her", "id": 96}
+{"prompt": "At the concert, Chloe sat in Rachel's seat, so the usher helped", "correct_label": " Chloe", "model_predict": " her", "id": 97}
+{"prompt": "In the lab, Nora spilled Anna's sample, so the assistant sighed at", "correct_label": " Nora", "model_predict": " her", "id": 98}
+{"prompt": "During the meeting, Leo shared Mia's plan, so the boss praised", "correct_label": " Leo", "model_predict": " her", "id": 99}

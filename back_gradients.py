@@ -77,7 +77,7 @@ def compute_sigma(frequencies):
     return torch.cat(sigma_, dim=0)
 
 
-def load_frequencies(frequences_path, sub_transcoders_num):
+def load_frequencies(frequences_path, sub_transcoders_num, include_dead_features=True):
     frequencies = []
     for i in range(sub_transcoders_num):
         frequencies.append(torch.load(f"{frequences_path.format(i)}_log_feature_sparsity.pt"))
@@ -87,6 +87,9 @@ def load_frequencies(frequences_path, sub_transcoders_num):
     frequencies = torch.stack(frequencies)
     # print("frequencies[0][:20]:", frequencies[0][:20])
     frequencies = torch.pow(10, frequencies)
+
+    print("frequencies.shape:", frequencies.shape)
+    print("frequencies[0][:20]:", frequencies[0][:20])
 
     # for i in range(sub_transcoders_num):
     #     print("frequencies[{}].shape:".format(i), frequencies[i].shape)
@@ -101,12 +104,37 @@ def load_frequencies(frequences_path, sub_transcoders_num):
     # print("sigma_.shape:", sigma_.shape)
     # print("sigma_[0][:20]:", sigma_[0][:20])
 
+    if include_dead_features:
+        sorted_frequencies, indices = torch.sort(frequencies, dim=1)
+        print(sorted_frequencies[0][:2000])
+        # print(sorted_frequencies[0][-1000:])
+
     return frequencies, sigma_
 
 
 def sub_transcoders_wrapper(model, transcoders, sub_transcoders_num, save_grads=False):
+    original_mlps = []
     for transcoder in transcoders[:sub_transcoders_num]:
+        original_mlps.append(model.blocks[transcoder.cfg.hook_point_layer].mlp)
         model.blocks[transcoder.cfg.hook_point_layer].mlp = TranscoderWrapper(transcoder)
+
+    if not save_grads:
+        return model, None, original_mlps
+
+    # Clean up memory
+    import gc
+
+    gc.collect()
+    torch.cuda.empty_cache()
+
+
+    grads = {}
+    
+    return model, grads, original_mlps
+
+
+def sub_transcoders_wrapper_specific_layer(model, transcoder, save_grads=False):
+    model.blocks[transcoder.cfg.hook_point_layer].mlp = TranscoderWrapper(transcoder)
 
     if not save_grads:
         return model, None
@@ -371,6 +399,74 @@ def update_algorithm_node_v2(model, tokens_arr, answer_token_indices, sub_transc
         model.blocks[layer_idx].mlp.transcoder.W_enc.data = model.blocks[layer_idx].mlp.transcoder.W_enc.data + change_layer_multipliers * applied_gradients
 
     return model
+
+
+def update_algorithm_node_v3(model, tokens_arr, answer_token_indices, vocab, top_m_gradients_each_layer, frequencies, sigma_, range_n):
+
+    # for layer_idx in range(sub_transcoders_num-1):
+    for layer_idx in range(1):
+        logits = model(tokens_arr)
+
+        # if layer_idx == 0:
+        print("layer_idx:", layer_idx)
+        print("logits shape:", logits.shape)
+        print("top 20 logits:", torch.topk(logits[0, -1], k=20))
+        print("top 20 words:", [vocab[int(i)] for i in torch.topk(logits[0, -1], k=20).indices])
+        print("correct logits:", logits[:, -1, answer_token_indices[0]])
+        model.zero_grad()
+    
+        logits[:, -1, answer_token_indices[0]].backward()
+
+        top_m_W_dec_gradients_values, top_m_W_dec_gradients_indices = top_m_gradients_v2(grads=model.blocks[layer_idx].mlp.transcoder.W_dec.grad, m=top_m_gradients_each_layer, is_abs=True)
+
+        top_m_W_enc1_gradients_values, top_m_W_enc1_gradients_indices = top_m_gradients_v2(grads=model.blocks[layer_idx+1].mlp.transcoder.W_enc.grad, m=top_m_gradients_each_layer, is_abs=True)
+
+
+        applied_W_dec_gradients = torch.zeros_like(model.blocks[layer_idx].mlp.transcoder.W_dec.grad)
+        change_W_dec_multipliers = torch.zeros_like(model.blocks[layer_idx].mlp.transcoder.W_dec.grad)
+
+        applied_W_enc1_gradients = torch.zeros_like(model.blocks[layer_idx+1].mlp.transcoder.W_enc.grad)
+        change_W_enc1_multipliers = torch.zeros_like(model.blocks[layer_idx+1].mlp.transcoder.W_enc.grad)
+
+        index_W_dec = 0
+        index_W_enc1 = 0
+
+        
+        def compute_alpha(current_gradient, current_layer, current_index):
+            if current_gradient > 0:
+                alpha_ = frequencies[current_layer][current_index] + range_n * sigma_[current_layer][current_index]
+            else:
+                alpha_ = frequencies[current_layer][current_index] + range_n * sigma_[current_layer][current_index]
+
+            return alpha_
+
+
+        for i in range(top_m_gradients_each_layer):
+
+            if top_m_W_dec_gradients_values[index_W_dec] > top_m_W_enc1_gradients_values[index_W_enc1]:
+                applied_W_dec_gradients[top_m_W_dec_gradients_indices[index_W_dec][0], top_m_W_dec_gradients_indices[index_W_dec][1]] = model.blocks[layer_idx].mlp.transcoder.W_dec.grad[top_m_W_dec_gradients_indices[index_W_dec][0], top_m_W_dec_gradients_indices[index_W_dec][1]]
+
+                alpha_ = compute_alpha(current_gradient=model.blocks[layer_idx].mlp.transcoder.W_dec.grad[top_m_W_dec_gradients_indices[index_W_dec][0], top_m_W_dec_gradients_indices[index_W_dec][1]], current_layer=layer_idx, current_index=top_m_W_dec_gradients_indices[index_W_dec][1])
+
+                change_W_dec_multipliers[top_m_W_dec_gradients_indices[index_W_dec][0], top_m_W_dec_gradients_indices[index_W_dec][1]] = alpha_
+
+                index_W_dec += 1
+            else:
+                applied_W_enc1_gradients[top_m_W_enc1_gradients_indices[index_W_enc1][0], top_m_W_enc1_gradients_indices[index_W_enc1][1]] = model.blocks[layer_idx+1].mlp.transcoder.W_enc.grad[top_m_W_enc1_gradients_indices[index_W_enc1][0], top_m_W_enc1_gradients_indices[index_W_enc1][1]]
+
+                alpha_ = compute_alpha(current_gradient=model.blocks[layer_idx+1].mlp.transcoder.W_enc.grad[top_m_W_enc1_gradients_indices[index_W_enc1][0], top_m_W_enc1_gradients_indices[index_W_enc1][1]], current_layer=layer_idx+1, current_index=top_m_W_enc1_gradients_indices[index_W_enc1][1])
+
+                change_W_enc1_multipliers[top_m_W_enc1_gradients_indices[index_W_enc1][0], top_m_W_enc1_gradients_indices[index_W_enc1][1]] = alpha_
+
+                index_W_enc1 += 1
+
+
+        model.blocks[layer_idx].mlp.transcoder.W_dec.data = model.blocks[layer_idx].mlp.transcoder.W_dec.data + change_W_dec_multipliers * applied_W_dec_gradients
+
+        model.blocks[layer_idx+1].mlp.transcoder.W_enc.data = model.blocks[layer_idx+1].mlp.transcoder.W_enc.data + change_W_enc1_multipliers * applied_W_enc1_gradients
+
+    return model
+
         
     
 def interactive_with_user(model):
@@ -399,11 +495,16 @@ def interactive_with_user(model):
 
         print("correct logits:", logits[:, -1, answer_token_indices[0]])
 
+        flag = input("Enter the flag: ")
+
+        if flag == "0":
+            continue
+
 
         top_m_gradients_each_layer = int(input("Enter the top m gradients each layer: "))
         range_n = int(input("Enter the range n: "))
 
-        update_algorithm_node_v2(model=model, tokens_arr=tokens_arr, answer_token_indices=answer_token_indices, sub_transcoders_num=sub_transcoders_num, top_m_gradients_each_layer=top_m_gradients_each_layer, frequencies=frequencies, sigma_=sigma_, range_n=range_n)
+        update_algorithm_node_v3(model=model, tokens_arr=tokens_arr, answer_token_indices=answer_token_indices, sub_transcoders_num=sub_transcoders_num, top_m_gradients_each_layer=top_m_gradients_each_layer, frequencies=frequencies, sigma_=sigma_, range_n=range_n)
 
         logits = model(tokens_arr)
 

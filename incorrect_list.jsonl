@@ -1,0 +1,578 @@
+{"prompt": "While David and Rachel were working at the garden, Rachel gave a bone to", "correct_label": " David", "model_predict": " Rachel", "id": 36}
+{"prompt": "While Kelly and Joseph were working at the store, Joseph gave a bone to", "correct_label": " Kelly", "model_predict": " the", "id": 70}
+{"prompt": "Then, Thomas and Daniel were working at the station. Daniel decided to give a bone to", "correct_label": " Thomas", "model_predict": " the", "id": 91}
+{"prompt": "When Jessica and Katie got a bone at the office, Katie decided to give it to", "correct_label": " Jessica", "model_predict": " her", "id": 120}
+{"prompt": "While James and Brandon were working at the house, Brandon gave a kiss to", "correct_label": " James", "model_predict": " Brandon", "id": 127}
+{"prompt": "While Kristen and Angela were working at the restaurant, Angela gave a bone to", "correct_label": " Kristen", "model_predict": " the", "id": 133}
+{"prompt": "While Eric and James were working at the school, James gave a bone to", "correct_label": " Eric", "model_predict": " the", "id": 155}
+{"prompt": "When Michelle and Tiffany got a necklace at the station, Tiffany decided to give it to", "correct_label": " Michelle", "model_predict": " her", "id": 175}
+{"prompt": "Then, Lindsay and Brittany were thinking about going to the store. Brittany wanted to give a bone to", "correct_label": " Lindsay", "model_predict": " the", "id": 179}
+{"prompt": "Then, David and Mark were working at the station. Mark decided to give a ring to", "correct_label": " David", "model_predict": " the", "id": 182}
+{"prompt": "When Katie and Jessica got a ring at the store, Jessica decided to give the ring to", "correct_label": " Katie", "model_predict": " her", "id": 196}
+{"prompt": "Then, Lindsay and Laura were working at the hospital. Laura decided to give a snack to", "correct_label": " Lindsay", "model_predict": " her", "id": 202}
+{"prompt": "When Kristen and Katherine got a bone at the store, Katherine decided to give the bone to", "correct_label": " Kristen", "model_predict": " her", "id": 216}
+{"prompt": "The office Brittany and Angela went to had a computer. Angela gave it to", "correct_label": " Brittany", "model_predict": " her", "id": 222}
+{"prompt": "Then, Richard and Mark were thinking about going to the garden. Mark wanted to give a bone to", "correct_label": " Richard", "model_predict": " the", "id": 233}
+{"prompt": "Then, Bradley and Richard were thinking about going to the office. Richard wanted to give a ring to", "correct_label": " Bradley", "model_predict": " the", "id": 238}
+{"prompt": "While Ashley and Nathan were commuting to the school, Nathan gave a drink to", "correct_label": " Ashley", "model_predict": " the", "id": 271}
+{"prompt": "While Michelle and Erin were commuting to the hospital, Erin gave a snack to", "correct_label": " Michelle", "model_predict": " her", "id": 280}
+{"prompt": "While William and James were working at the station, James gave a snack to", "correct_label": " William", "model_predict": " the", "id": 292}
+{"prompt": "While Kenneth and Anthony were commuting to the house, Anthony gave a bone to", "correct_label": " Kenneth", "model_predict": " Anthony", "id": 295}
+{"prompt": "Friends Michelle and Andrea found a necklace at the hospital. Andrea gave it to", "correct_label": " Michelle", "model_predict": " her", "id": 313}
+{"prompt": "After the lunch, Mark and Nathan went to the hospital. Nathan gave a bone to", "correct_label": " Mark", "model_predict": " the", "id": 316}
+{"prompt": "When Erica and Nicole got a drink at the restaurant, Nicole decided to give it to", "correct_label": " Erica", "model_predict": " her", "id": 322}
+{"prompt": "While William and Scott were commuting to the hospital, Scott gave a bone to", "correct_label": " William", "model_predict": " the", "id": 335}
+{"prompt": "When Angela and Kelly got a ring at the house, Kelly decided to give it to", "correct_label": " Angela", "model_predict": " her", "id": 343}
+{"prompt": "Friends Vanessa and Christine found a basketball at the hospital. Christine gave it to", "correct_label": " Vanessa", "model_predict": " her", "id": 347}
+{"prompt": "Then, Rachel and Thomas went to the hospital. Thomas gave a bone to", "correct_label": " Rachel", "model_predict": " the", "id": 349}
+{"prompt": "The hospital Rachel and Katherine went to had a drink. Katherine gave it to", "correct_label": " Rachel", "model_predict": " her", "id": 351}
+{"prompt": "While Jason and Tiffany were commuting to the school, Tiffany gave a bone to", "correct_label": " Jason", "model_predict": " the", "id": 391}
+{"prompt": "When Brittany and Erica got a necklace at the station, Erica decided to give the necklace to", "correct_label": " Brittany", "model_predict": " her", "id": 410}
+{"prompt": "While Andrew and Lindsay were working at the restaurant, Lindsay gave a bone to", "correct_label": " Andrew", "model_predict": " the", "id": 423}
+{"prompt": "While Kenneth and Scott were working at the store, Scott gave a bone to", "correct_label": " Kenneth", "model_predict": " the", "id": 425}
+{"prompt": "Friends David and Mark found a ring at the station. Mark gave it to", "correct_label": " David", "model_predict": " them", "id": 440}
+{"prompt": "Then, Danielle and Cody were thinking about going to the school. Cody wanted to give a bone to", "correct_label": " Danielle", "model_predict": " the", "id": 467}
+{"prompt": "When Sara and Lindsay got a bone at the garden, Sara decided to give the bone to", "correct_label": " Lindsay", "model_predict": " her", "id": 514}
+{"prompt": "While William and Allison were working at the garden, William gave a bone to", "correct_label": " Allison", "model_predict": " his", "id": 519}
+{"prompt": "While Kevin and Alexander were commuting to the station, Kevin gave a ring to", "correct_label": " Alexander", "model_predict": " his", "id": 548}
+{"prompt": "Then, Emily and Alicia had a lot of fun at the hospital. Emily gave a snack to", "correct_label": " Alicia", "model_predict": " her", "id": 550}
+{"prompt": "After Kristen and Tiffany went to the house, Kristen gave a snack to", "correct_label": " Tiffany", "model_predict": " her", "id": 551}
+{"prompt": "Friends Nicole and Erica found a necklace at the hospital. Nicole gave it to", "correct_label": " Erica", "model_predict": " her", "id": 552}
+{"prompt": "The hospital Kimberly and Kelly went to had a computer. Kimberly gave it to", "correct_label": " Kelly", "model_predict": " her", "id": 577}
+{"prompt": "Then, Kimberly and Kelly were thinking about going to the hospital. Kimberly wanted to give a ring to", "correct_label": " Kelly", "model_predict": " her", "id": 581}
+{"prompt": "Then, John and Ashley were thinking about going to the school. John wanted to give a snack to", "correct_label": " Ashley", "model_predict": " them", "id": 594}
+{"prompt": "Friends Melissa and Sara found a necklace at the school. Melissa gave it to", "correct_label": " Sara", "model_predict": " her", "id": 596}
+{"prompt": "Then, Sarah and Nicole had a long argument. Afterwards Sarah said to", "correct_label": " Nicole", "model_predict": " her", "id": 601}
+{"prompt": "Then, Melissa and Bradley were thinking about going to the restaurant. Melissa wanted to give a drink to", "correct_label": " Bradley", "model_predict": " the", "id": 608}
+{"prompt": "Then, Melissa and Michelle were working at the station. Melissa decided to give a drink to", "correct_label": " Michelle", "model_predict": " the", "id": 614}
+{"prompt": "The office Jennifer and Tiffany went to had a snack. Jennifer gave it to", "correct_label": " Tiffany", "model_predict": " her", "id": 617}
+{"prompt": "The restaurant Erica and Stephanie went to had a bone. Erica gave it to", "correct_label": " Stephanie", "model_predict": " her", "id": 620}
+{"prompt": "Then, Katherine and Gregory were thinking about going to the station. Katherine wanted to give a bone to", "correct_label": " Gregory", "model_predict": " the", "id": 637}
+{"prompt": "While Allison and Sarah were working at the school, Allison gave a bone to", "correct_label": " Sarah", "model_predict": " the", "id": 638}
+{"prompt": "Then, Rebecca and Eric were working at the garden. Rebecca decided to give a drink to", "correct_label": " Eric", "model_predict": " the", "id": 641}
+{"prompt": "Then, Kristen and Sara were thinking about going to the restaurant. Kristen wanted to give a drink to", "correct_label": " Sara", "model_predict": " the", "id": 656}
+{"prompt": "When Sarah and Megan got a computer at the hospital, Sarah decided to give it to", "correct_label": " Megan", "model_predict": " her", "id": 662}
+{"prompt": "Then, Katie and Amanda were thinking about going to the restaurant. Katie wanted to give a snack to", "correct_label": " Amanda", "model_predict": " her", "id": 664}
+{"prompt": "Then, Courtney and Alicia went to the restaurant. Courtney gave a ring to", "correct_label": " Alicia", "model_predict": " Courtney", "id": 680}
+{"prompt": "Then, Lindsay and Joseph were thinking about going to the station. Lindsay wanted to give a drink to", "correct_label": " Joseph", "model_predict": " the", "id": 692}
+{"prompt": "The school Sarah and Nicholas went to had a kiss. Sarah gave it to", "correct_label": " Nicholas", "model_predict": " her", "id": 698}
+{"prompt": "After Allison and Jamie went to the store, Allison gave a bone to", "correct_label": " Jamie", "model_predict": " the", "id": 702}
+{"prompt": "While Jessica and Lauren were commuting to the restaurant, Jessica gave a bone to", "correct_label": " Lauren", "model_predict": " the", "id": 705}
+{"prompt": "After the lunch, Daniel and Michelle went to the house. Daniel gave a drink to", "correct_label": " Michelle", "model_predict": " Daniel", "id": 710}
+{"prompt": "Then, Amy and Bryan had a long argument. Afterwards Amy said to", "correct_label": " Bryan", "model_predict": " Amy", "id": 721}
+{"prompt": "Afterwards, Vanessa and Laura went to the office. Vanessa gave a bone to", "correct_label": " Laura", "model_predict": " Vanessa", "id": 726}
+{"prompt": "When Elizabeth and Andrew got a bone at the hospital, Elizabeth decided to give it to", "correct_label": " Andrew", "model_predict": " her", "id": 757}
+{"prompt": "Then, Mary and William had a long argument. Afterwards Mary said to", "correct_label": " William", "model_predict": " Mary", "id": 759}
+{"prompt": "While Jessica and Megan were commuting to the station, Jessica gave a drink to", "correct_label": " Megan", "model_predict": " her", "id": 793}
+{"prompt": "While Amanda and Laura were working at the restaurant, Amanda gave a ring to", "correct_label": " Laura", "model_predict": " her", "id": 797}
+{"prompt": "Then, Mary and Brittany went to the office. Mary gave a snack to", "correct_label": " Brittany", "model_predict": " the", "id": 798}
+{"prompt": "The hospital Sarah and Danielle went to had a ring. Sarah gave it to", "correct_label": " Danielle", "model_predict": " her", "id": 801}
+{"prompt": "Then, Erin and Brittany were thinking about going to the hospital. Erin wanted to give a bone to", "correct_label": " Brittany", "model_predict": " the", "id": 808}
+{"prompt": "Friends Rebecca and Ashley found a drink at the station. Rebecca gave it to", "correct_label": " Ashley", "model_predict": " her", "id": 817}
+{"prompt": "The office Andrea and Sarah went to had a ring. Andrea gave it to", "correct_label": " Sarah", "model_predict": " her", "id": 821}
+{"prompt": "Then, Sarah and Jesse were thinking about going to the station. Sarah wanted to give a ring to", "correct_label": " Jesse", "model_predict": " the", "id": 832}
+{"prompt": "Then, Alicia and Stephanie had a long argument, and afterwards Alicia said to", "correct_label": " Stephanie", "model_predict": " Alicia", "id": 858}
+{"prompt": "Then, Stephanie and Tyler were working at the house. Stephanie decided to give a bone to", "correct_label": " Tyler", "model_predict": " the", "id": 860}
+{"prompt": "After Katie and Stephanie went to the hospital, Katie gave a bone to", "correct_label": " Stephanie", "model_predict": " her", "id": 873}
+{"prompt": "Then, Shannon and Kristen went to the school. Shannon gave a necklace to", "correct_label": " Kristen", "model_predict": " Shannon", "id": 876}
+{"prompt": "After Rebecca and Michelle went to the station, Rebecca gave a snack to", "correct_label": " Michelle", "model_predict": " the", "id": 892}
+{"prompt": "When Laura and Melissa got a kiss at the school, Laura decided to give it to", "correct_label": " Melissa", "model_predict": " her", "id": 894}
+{"prompt": "Then, Alicia and Allison went to the restaurant. Alicia gave a snack to", "correct_label": " Allison", "model_predict": " the", "id": 896}
+{"prompt": "After the lunch, Lindsey and Sarah went to the hospital. Lindsey gave a basketball to", "correct_label": " Sarah", "model_predict": " Lindsey", "id": 970}
+{"prompt": "When Jennifer and Cody got a necklace at the station, Jennifer decided to give it to", "correct_label": " Cody", "model_predict": " them", "id": 971}
+{"prompt": "When Katherine, Brian and Samantha arrived at the school, Brian and Samantha gave a bone to", "correct_label": " Katherine", "model_predict": " the", "id": 1009}
+{"prompt": "When James, Kelly and Benjamin arrived at the station, Kelly and Benjamin gave a kiss to", "correct_label": " James", "model_predict": " the", "id": 1010}
+{"prompt": "Friends Aaron, Christopher and Joseph went to the school. Christopher and Joseph gave a drink to", "correct_label": " Aaron", "model_predict": " the", "id": 1016}
+{"prompt": "When Adam, Kristen and Cody arrived at the school, Kristen and Cody gave a drink to", "correct_label": " Adam", "model_predict": " the", "id": 1017}
+{"prompt": "When Michelle, Christopher and Lauren arrived at the house, Christopher and Lauren gave a ring to", "correct_label": " Michelle", "model_predict": " the", "id": 1022}
+{"prompt": "When Brian, Thomas and Tiffany arrived at the garden, Thomas and Tiffany gave a snack to", "correct_label": " Brian", "model_predict": " the", "id": 1026}
+{"prompt": "Then, Nathan, Joseph and Lindsay went to the station. Joseph and Lindsay gave a kiss to", "correct_label": " Nathan", "model_predict": " the", "id": 1030}
+{"prompt": "Then, Stephanie, Jessica and Kimberly went to the school. Jessica and Kimberly gave a bone to", "correct_label": " Stephanie", "model_predict": " the", "id": 1034}
+{"prompt": "Friends Heather, Angela and Lindsey went to the station. Angela and Lindsey gave a snack to", "correct_label": " Heather", "model_predict": " the", "id": 1038}
+{"prompt": "Friends David, Amanda and Daniel went to the school. Amanda and Daniel gave a kiss to", "correct_label": " David", "model_predict": " each", "id": 1040}
+{"prompt": "When Kyle, Stephanie and Kelly arrived at the school, Stephanie and Kelly gave a drink to", "correct_label": " Kyle", "model_predict": " the", "id": 1053}
+{"prompt": "When Sara, Christina and Angela arrived at the office, Christina and Angela gave a kiss to", "correct_label": " Sara", "model_predict": " each", "id": 1054}
+{"prompt": "Friends Melissa, Alexander and Eric went to the store. Alexander and Eric gave a bone to", "correct_label": " Melissa", "model_predict": " the", "id": 1059}
+{"prompt": "Then, Bradley, Angela and Andrew went to the store. Angela and Andrew gave a snack to", "correct_label": " Bradley", "model_predict": " the", "id": 1083}
+{"prompt": "Friends Sarah, Vanessa and Sean went to the school. Vanessa and Sean gave a basketball to", "correct_label": " Sarah", "model_predict": " the", "id": 1089}
+{"prompt": "Friends Kenneth, Erica and Benjamin went to the hospital. Erica and Benjamin gave a bone to", "correct_label": " Kenneth", "model_predict": " the", "id": 1094}
+{"prompt": "When Jonathan, Amber and Stephen arrived at the restaurant, Amber and Stephen gave a bone to", "correct_label": " Jonathan", "model_predict": " the", "id": 1101}
+{"prompt": "When Alexander, Tiffany and Lisa arrived at the station, Tiffany and Lisa gave a computer to", "correct_label": " Alexander", "model_predict": " the", "id": 1102}
+{"prompt": "Friends Andrea, Kyle and Kristen went to the school. Kyle and Kristen gave a snack to", "correct_label": " Andrea", "model_predict": " the", "id": 1104}
+{"prompt": "Friends Alexander, Amy and Kevin went to the restaurant. Amy and Kevin gave a bone to", "correct_label": " Alexander", "model_predict": " the", "id": 1108}
+{"prompt": "Afterwards David, Thomas and Andrea went to the school. Thomas and Andrea gave a bone to", "correct_label": " David", "model_predict": " the", "id": 1110}
+{"prompt": "Friends Ryan, Shannon and Sara went to the garden. Shannon and Sara gave a bone to", "correct_label": " Ryan", "model_predict": " the", "id": 1123}
+{"prompt": "When Mary, Anthony and Brandon arrived at the station, Anthony and Brandon gave a snack to", "correct_label": " Mary", "model_predict": " the", "id": 1130}
+{"prompt": "Friends Bradley, Melissa and Kristen went to the school. Melissa and Kristen gave a drink to", "correct_label": " Bradley", "model_predict": " the", "id": 1136}
+{"prompt": "Friends Aaron, Mark and Alexander went to the station. Mark and Alexander gave a kiss to", "correct_label": " Aaron", "model_predict": " the", "id": 1140}
+{"prompt": "Friends Daniel, Patrick and Christine went to the house. Patrick and Christine gave a bone to", "correct_label": " Daniel", "model_predict": " the", "id": 1143}
+{"prompt": "Friends Lisa, Anthony and Vanessa went to the garden. Anthony and Vanessa gave a bone to", "correct_label": " Lisa", "model_predict": " the", "id": 1145}
+{"prompt": "Friends Jennifer, Mary and Benjamin went to the house. Mary and Benjamin gave a ring to", "correct_label": " Jennifer", "model_predict": " the", "id": 1150}
+{"prompt": "Friends Jennifer, Vanessa and Rachel went to the garden. Vanessa and Rachel gave a basketball to", "correct_label": " Jennifer", "model_predict": " the", "id": 1167}
+{"prompt": "When Jennifer, Benjamin and Shannon arrived at the station, Benjamin and Shannon gave a necklace to", "correct_label": " Jennifer", "model_predict": " the", "id": 1168}
+{"prompt": "When Joseph, Jonathan and Melissa arrived at the school, Jonathan and Melissa gave a ring to", "correct_label": " Joseph", "model_predict": " the", "id": 1169}
+{"prompt": "When Bradley, Jamie and Michael arrived at the school, Jamie and Michael gave a drink to", "correct_label": " Bradley", "model_predict": " the", "id": 1170}
+{"prompt": "When Joseph, Travis and Amy arrived at the hospital, Travis and Amy gave a drink to", "correct_label": " Joseph", "model_predict": " the", "id": 1181}
+{"prompt": "When Kevin, Samuel and Michael arrived at the store, Samuel and Michael gave a kiss to", "correct_label": " Kevin", "model_predict": " the", "id": 1182}
+{"prompt": "Friends Jeremy, Michelle and Christopher went to the store. Michelle and Christopher gave a bone to", "correct_label": " Jeremy", "model_predict": " the", "id": 1184}
+{"prompt": "Friends Samuel, Ryan and Erica went to the garden. Ryan and Erica gave a bone to", "correct_label": " Samuel", "model_predict": " the", "id": 1186}
+{"prompt": "When Laura, Ryan and Nathan arrived at the school, Ryan and Nathan gave a bone to", "correct_label": " Laura", "model_predict": " the", "id": 1188}
+{"prompt": "Then, Alexander, Jeffrey and Rachel went to the station. Jeffrey and Rachel gave a drink to", "correct_label": " Alexander", "model_predict": " the", "id": 1190}
+{"prompt": "Then, Angela, Robert and Lauren went to the station. Robert and Lauren gave a bone to", "correct_label": " Angela", "model_predict": " Robert", "id": 1196}
+{"prompt": "Afterwards Samuel, Nicole and Adam went to the store. Nicole and Adam gave a bone to", "correct_label": " Samuel", "model_predict": " the", "id": 1200}
+{"prompt": "When Allison, Erin and Christina arrived at the store, Erin and Christina gave a bone to", "correct_label": " Allison", "model_predict": " the", "id": 1204}
+{"prompt": "Then, Angela, Thomas and Courtney went to the hospital. Thomas and Courtney gave a kiss to", "correct_label": " Angela", "model_predict": " the", "id": 1216}
+{"prompt": "When Bryan, Jamie and Kevin arrived at the school, Jamie and Kevin gave a ring to", "correct_label": " Bryan", "model_predict": " the", "id": 1222}
+{"prompt": "When David, Dustin and Kevin arrived at the garden, Dustin and Kevin gave a kiss to", "correct_label": " David", "model_predict": " the", "id": 1225}
+{"prompt": "Then, Rebecca, Erin and Samantha went to the store. Erin and Samantha gave a kiss to", "correct_label": " Rebecca", "model_predict": " each", "id": 1226}
+{"prompt": "When Jeffrey, Gregory and Vanessa arrived at the store, Gregory and Vanessa gave a snack to", "correct_label": " Jeffrey", "model_predict": " the", "id": 1236}
+{"prompt": "Friends Christopher, Stephen and Dustin went to the station. Stephen and Dustin gave a bone to", "correct_label": " Christopher", "model_predict": " the", "id": 1238}
+{"prompt": "When Michelle, Katherine and Melissa arrived at the office, Katherine and Melissa gave a basketball to", "correct_label": " Michelle", "model_predict": " the", "id": 1241}
+{"prompt": "When Crystal, Courtney and Jamie arrived at the restaurant, Courtney and Jamie gave a drink to", "correct_label": " Crystal", "model_predict": " the", "id": 1244}
+{"prompt": "Friends Jeffrey, Christopher and Aaron went to the hospital. Christopher and Aaron gave a kiss to", "correct_label": " Jeffrey", "model_predict": " the", "id": 1246}
+{"prompt": "Then, Jennifer, Adam and Dustin went to the school. Adam and Dustin gave a kiss to", "correct_label": " Jennifer", "model_predict": " the", "id": 1247}
+{"prompt": "Friends Danielle, Andrea and Tyler went to the hospital. Andrea and Tyler gave a bone to", "correct_label": " Danielle", "model_predict": " the", "id": 1252}
+{"prompt": "Friends Laura, Anthony and Scott went to the restaurant. Anthony and Scott gave a bone to", "correct_label": " Laura", "model_predict": " the", "id": 1254}
+{"prompt": "When Anthony, Charles and Jamie arrived at the station, Charles and Jamie gave a ring to", "correct_label": " Anthony", "model_predict": " the", "id": 1258}
+{"prompt": "When Rebecca, Courtney and Christine arrived at the store, Courtney and Christine gave a basketball to", "correct_label": " Rebecca", "model_predict": " Courtney", "id": 1260}
+{"prompt": "Then, Michelle, Jesse and Steven went to the store. Jesse and Steven gave a basketball to", "correct_label": " Michelle", "model_predict": " Jesse", "id": 1262}
+{"prompt": "Then, Heather, Allison and Patrick went to the hospital. Allison and Patrick gave a bone to", "correct_label": " Heather", "model_predict": " the", "id": 1263}
+{"prompt": "Friends Gregory, Michelle and Charles went to the hospital. Michelle and Charles gave a bone to", "correct_label": " Gregory", "model_predict": " the", "id": 1264}
+{"prompt": "Friends Kenneth, Christopher and Melissa went to the station. Christopher and Melissa gave a necklace to", "correct_label": " Kenneth", "model_predict": " the", "id": 1270}
+{"prompt": "When Jesse, Shannon and Bradley arrived at the station, Shannon and Bradley gave a bone to", "correct_label": " Jesse", "model_predict": " the", "id": 1272}
+{"prompt": "When Lauren, Thomas and Kevin arrived at the station, Thomas and Kevin gave a necklace to", "correct_label": " Lauren", "model_predict": " the", "id": 1274}
+{"prompt": "Then, Samuel, Timothy and Ryan went to the school. Timothy and Ryan gave a kiss to", "correct_label": " Samuel", "model_predict": " each", "id": 1279}
+{"prompt": "Friends Alicia, Allison and Samuel went to the house. Allison and Samuel gave a bone to", "correct_label": " Alicia", "model_predict": " the", "id": 1281}
+{"prompt": "Friends Jennifer, Jonathan and Justin went to the garden. Jonathan and Justin gave a bone to", "correct_label": " Jennifer", "model_predict": " the", "id": 1287}
+{"prompt": "When Jesse, Shannon and Matthew arrived at the office, Shannon and Matthew gave a kiss to", "correct_label": " Jesse", "model_predict": " each", "id": 1288}
+{"prompt": "When Samantha, Daniel and Dustin arrived at the station, Daniel and Dustin gave a drink to", "correct_label": " Samantha", "model_predict": " the", "id": 1292}
+{"prompt": "Friends Kimberly, Heather and Katherine went to the station. Heather and Katherine gave a bone to", "correct_label": " Kimberly", "model_predict": " the", "id": 1294}
+{"prompt": "Then, Alexander, Brandon and Melissa went to the school. Brandon and Melissa gave a snack to", "correct_label": " Alexander", "model_predict": " the", "id": 1295}
+{"prompt": "When Rachel, Amanda and Jose arrived at the office, Amanda and Jose gave a kiss to", "correct_label": " Rachel", "model_predict": " each", "id": 1309}
+{"prompt": "Friends Matthew, Michelle and Courtney went to the store. Michelle and Courtney gave a kiss to", "correct_label": " Matthew", "model_predict": " each", "id": 1311}
+{"prompt": "When Justin, Amy and Bradley arrived at the hospital, Amy and Bradley gave a bone to", "correct_label": " Justin", "model_predict": " the", "id": 1314}
+{"prompt": "Then, Alexander, Vanessa and Joseph went to the station. Vanessa and Joseph gave a kiss to", "correct_label": " Alexander", "model_predict": " the", "id": 1317}
+{"prompt": "Friends Sarah, Christina and Allison went to the store. Christina and Allison gave a kiss to", "correct_label": " Sarah", "model_predict": " the", "id": 1320}
+{"prompt": "When David, John and Alexander arrived at the garden, John and Alexander gave a drink to", "correct_label": " David", "model_predict": " the", "id": 1329}
+{"prompt": "Then, Christopher, Kenneth and Allison went to the store. Kenneth and Allison gave a drink to", "correct_label": " Christopher", "model_predict": " Kenneth", "id": 1330}
+{"prompt": "When Paul, Shannon and Nathan arrived at the store, Shannon and Nathan gave a drink to", "correct_label": " Paul", "model_predict": " the", "id": 1333}
+{"prompt": "Then, Nicole, Jonathan and Timothy went to the garden. Jonathan and Timothy gave a drink to", "correct_label": " Nicole", "model_predict": " the", "id": 1341}
+{"prompt": "Then, Ashley, Anthony and Robert went to the school. Anthony and Robert gave a ring to", "correct_label": " Ashley", "model_predict": " the", "id": 1342}
+{"prompt": "Friends Bradley, Sean and Allison went to the station. Sean and Allison gave a bone to", "correct_label": " Bradley", "model_predict": " the", "id": 1346}
+{"prompt": "When Matthew, Erin and Jessica arrived at the station, Erin and Jessica gave a ring to", "correct_label": " Matthew", "model_predict": " the", "id": 1349}
+{"prompt": "When Jeffrey, Richard and Aaron arrived at the school, Richard and Aaron gave a bone to", "correct_label": " Jeffrey", "model_predict": " the", "id": 1351}
+{"prompt": "Friends Samantha, Joseph and Lindsey went to the garden. Joseph and Lindsey gave a necklace to", "correct_label": " Samantha", "model_predict": " the", "id": 1352}
+{"prompt": "When Erin, Amanda and Lauren arrived at the house, Amanda and Lauren gave a bone to", "correct_label": " Erin", "model_predict": " the", "id": 1353}
+{"prompt": "Then, Angela, Amber and Christine went to the store. Amber and Christine gave a snack to", "correct_label": " Angela", "model_predict": " the", "id": 1356}
+{"prompt": "Then, Kelly, Mark and Jamie went to the station. Mark and Jamie gave a drink to", "correct_label": " Kelly", "model_predict": " the", "id": 1357}
+{"prompt": "Then, Vanessa, Stephanie and Benjamin went to the hospital. Stephanie and Benjamin gave a snack to", "correct_label": " Vanessa", "model_predict": " the", "id": 1361}
+{"prompt": "When Jennifer, Rachel and Brandon arrived at the school, Rachel and Brandon gave a drink to", "correct_label": " Jennifer", "model_predict": " the", "id": 1364}
+{"prompt": "Then, Joshua, Jamie and Sean went to the house. Jamie and Sean gave a kiss to", "correct_label": " Joshua", "model_predict": " each", "id": 1366}
+{"prompt": "When Christine, Jacob and Lindsay arrived at the office, Jacob and Lindsay gave a bone to", "correct_label": " Christine", "model_predict": " the", "id": 1369}
+{"prompt": "Friends Amber, Stephen and Matthew went to the office. Stephen and Matthew gave a bone to", "correct_label": " Amber", "model_predict": " the", "id": 1372}
+{"prompt": "When Kristen, Bradley and William arrived at the hospital, Bradley and William gave a snack to", "correct_label": " Kristen", "model_predict": " the", "id": 1373}
+{"prompt": "When Charles, Danielle and Joseph arrived at the station, Danielle and Joseph gave a kiss to", "correct_label": " Charles", "model_predict": " the", "id": 1374}
+{"prompt": "When Bradley, Mark and Heather arrived at the station, Mark and Heather gave a ring to", "correct_label": " Bradley", "model_predict": " the", "id": 1380}
+{"prompt": "Then, Samantha, Stephanie and Jennifer went to the office. Stephanie and Jennifer gave a drink to", "correct_label": " Samantha", "model_predict": " the", "id": 1390}
+{"prompt": "When Crystal, Paul and Kristen arrived at the station, Paul and Kristen gave a necklace to", "correct_label": " Crystal", "model_predict": " the", "id": 1393}
+{"prompt": "Then, Angela, Ryan and Kristen went to the restaurant. Ryan and Kristen gave a bone to", "correct_label": " Angela", "model_predict": " the", "id": 1395}
+{"prompt": "Friends Jose, Brian and William went to the garden. Brian and William gave a bone to", "correct_label": " Jose", "model_predict": " the", "id": 1397}
+{"prompt": "When Joseph, Matthew and Laura arrived at the restaurant, Matthew and Laura gave a drink to", "correct_label": " Joseph", "model_predict": " the", "id": 1402}
+{"prompt": "Afterwards Sean, Michael and Scott went to the office. Michael and Scott gave a kiss to", "correct_label": " Sean", "model_predict": " each", "id": 1406}
+{"prompt": "Friends Katie, Ryan and Matthew went to the garden. Ryan and Matthew gave a kiss to", "correct_label": " Katie", "model_predict": " each", "id": 1410}
+{"prompt": "Then, Alexander, Jose and Heather went to the garden. Jose and Heather gave a kiss to", "correct_label": " Alexander", "model_predict": " each", "id": 1419}
+{"prompt": "Friends Lindsay, Angela and Shannon went to the garden. Angela and Shannon gave a bone to", "correct_label": " Lindsay", "model_predict": " the", "id": 1431}
+{"prompt": "When Mary, Brittany and Nathan arrived at the school, Brittany and Nathan gave a bone to", "correct_label": " Mary", "model_predict": " the", "id": 1434}
+{"prompt": "When Erica, Samuel and Emily arrived at the store, Samuel and Emily gave a snack to", "correct_label": " Erica", "model_predict": " the", "id": 1435}
+{"prompt": "Friends Jeremy, Kelly and Nathan went to the store. Kelly and Nathan gave a bone to", "correct_label": " Jeremy", "model_predict": " the", "id": 1438}
+{"prompt": "When Megan, David and Rachel arrived at the garden, David and Rachel gave a drink to", "correct_label": " Megan", "model_predict": " the", "id": 1439}
+{"prompt": "Then, Andrea, Robert and Matthew went to the house. Robert and Matthew gave a drink to", "correct_label": " Andrea", "model_predict": " Robert", "id": 1449}
+{"prompt": "When Katie, Samantha and Jennifer arrived at the school, Samantha and Jennifer gave a kiss to", "correct_label": " Katie", "model_predict": " the", "id": 1463}
+{"prompt": "Friends Rebecca, Jessica and Patrick went to the garden. Jessica and Patrick gave a kiss to", "correct_label": " Rebecca", "model_predict": " each", "id": 1464}
+{"prompt": "Then, Samantha, Shannon and Courtney went to the office. Shannon and Courtney gave a snack to", "correct_label": " Samantha", "model_predict": " Courtney", "id": 1470}
+{"prompt": "When Angela, Alicia and Anthony arrived at the store, Alicia and Anthony gave a necklace to", "correct_label": " Angela", "model_predict": " the", "id": 1472}
+{"prompt": "Friends Jennifer, Emily and Robert went to the station. Emily and Robert gave a drink to", "correct_label": " Jennifer", "model_predict": " the", "id": 1474}
+{"prompt": "Friends Amber, James and Tiffany went to the office. James and Tiffany gave a bone to", "correct_label": " Amber", "model_predict": " the", "id": 1478}
+{"prompt": "When Kristen, Nicole and William arrived at the office, Nicole and William gave a kiss to", "correct_label": " Kristen", "model_predict": " the", "id": 1482}
+{"prompt": "When Heather, Brittany and William arrived at the office, Brittany and William gave a drink to", "correct_label": " Heather", "model_predict": " the", "id": 1485}
+{"prompt": "When Kenneth, Lauren and Travis arrived at the station, Lauren and Travis gave a drink to", "correct_label": " Kenneth", "model_predict": " the", "id": 1486}
+{"prompt": "When Brian, Jamie and Christopher arrived at the house, Jamie and Christopher gave a kiss to", "correct_label": " Brian", "model_predict": " the", "id": 1487}
+{"prompt": "When Brittany, Jeffrey and Nicholas arrived at the station, Jeffrey and Nicholas gave a bone to", "correct_label": " Brittany", "model_predict": " the", "id": 1494}
+{"prompt": "When Rachel, Allison and Alexander arrived at the hospital, Allison and Alexander gave a drink to", "correct_label": " Rachel", "model_predict": " the", "id": 1499}
+{"prompt": "Friends Lindsey, Adam and Patrick went to the store. Lindsey and Patrick gave a ring to", "correct_label": " Adam", "model_predict": " the", "id": 1502}
+{"prompt": "Then, Mary, Sean and Lindsay went to the office. Mary and Lindsay gave a drink to", "correct_label": " Sean", "model_predict": " the", "id": 1503}
+{"prompt": "Then, Katherine, Dustin and James went to the house. Katherine and James gave a kiss to", "correct_label": " Dustin", "model_predict": " Katherine", "id": 1505}
+{"prompt": "Then, Jesse, Matthew and Brandon went to the store. Jesse and Brandon gave a snack to", "correct_label": " Matthew", "model_predict": " the", "id": 1506}
+{"prompt": "When Lindsay, Matthew and Patrick arrived at the store, Lindsay and Patrick gave a bone to", "correct_label": " Matthew", "model_predict": " the", "id": 1507}
+{"prompt": "When Thomas, Shannon and Gregory arrived at the restaurant, Thomas and Gregory gave a basketball to", "correct_label": " Shannon", "model_predict": " Thomas", "id": 1508}
+{"prompt": "Friends Nathan, Erin and Courtney went to the station. Nathan and Courtney gave a ring to", "correct_label": " Erin", "model_predict": " the", "id": 1512}
+{"prompt": "When Tiffany, Lindsey and Sarah arrived at the garden, Tiffany and Sarah gave a necklace to", "correct_label": " Lindsey", "model_predict": " the", "id": 1513}
+{"prompt": "Then, Melissa, Lauren and Stephen went to the office. Melissa and Stephen gave a snack to", "correct_label": " Lauren", "model_predict": " Melissa", "id": 1514}
+{"prompt": "Then, Stephen, Alicia and Ashley went to the hospital. Stephen and Ashley gave a necklace to", "correct_label": " Alicia", "model_predict": " Stephen", "id": 1515}
+{"prompt": "Afterwards Jeffrey, Bradley and Brandon went to the station. Jeffrey and Brandon gave a bone to", "correct_label": " Bradley", "model_predict": " the", "id": 1517}
+{"prompt": "Friends Christine, Megan and Sarah went to the school. Christine and Sarah gave a snack to", "correct_label": " Megan", "model_predict": " the", "id": 1518}
+{"prompt": "Then, Thomas, Kenneth and Stephanie went to the restaurant. Thomas and Stephanie gave a basketball to", "correct_label": " Kenneth", "model_predict": " Thomas", "id": 1519}
+{"prompt": "When Lauren, Dustin and Sarah arrived at the school, Lauren and Sarah gave a ring to", "correct_label": " Dustin", "model_predict": " the", "id": 1521}
+{"prompt": "When Jason, Stephen and Rebecca arrived at the restaurant, Jason and Rebecca gave a bone to", "correct_label": " Stephen", "model_predict": " the", "id": 1522}
+{"prompt": "Friends Jonathan, Jeffrey and Cody went to the house. Jonathan and Cody gave a kiss to", "correct_label": " Jeffrey", "model_predict": " the", "id": 1523}
+{"prompt": "Then, Vanessa, Amanda and Dustin went to the store. Vanessa and Dustin gave a ring to", "correct_label": " Amanda", "model_predict": " Vanessa", "id": 1524}
+{"prompt": "Afterwards Sarah, Jonathan and Megan went to the garden. Sarah and Megan gave a computer to", "correct_label": " Jonathan", "model_predict": " Sarah", "id": 1525}
+{"prompt": "Then, Lisa, Christina and Katherine went to the station. Lisa and Katherine gave a necklace to", "correct_label": " Christina", "model_predict": " Lisa", "id": 1526}
+{"prompt": "Friends Gregory, Stephen and Bryan went to the hospital. Gregory and Bryan gave a bone to", "correct_label": " Stephen", "model_predict": " the", "id": 1527}
+{"prompt": "Then, Stephen, Mark and Lindsay went to the office. Stephen and Lindsay gave a computer to", "correct_label": " Mark", "model_predict": " Stephen", "id": 1529}
+{"prompt": "Then, Jesse, Mary and David went to the store. Jesse and David gave a bone to", "correct_label": " Mary", "model_predict": " Jesse", "id": 1534}
+{"prompt": "When Kyle, Tyler and Ashley arrived at the garden, Kyle and Ashley gave a drink to", "correct_label": " Tyler", "model_predict": " Kyle", "id": 1535}
+{"prompt": "Then, Eric, Aaron and Travis went to the school. Eric and Travis gave a kiss to", "correct_label": " Aaron", "model_predict": " the", "id": 1536}
+{"prompt": "Then, Crystal, Eric and Andrew went to the store. Crystal and Andrew gave a ring to", "correct_label": " Eric", "model_predict": " Crystal", "id": 1537}
+{"prompt": "Then, Stephanie, Matthew and Benjamin went to the store. Stephanie and Benjamin gave a drink to", "correct_label": " Matthew", "model_predict": " the", "id": 1538}
+{"prompt": "Afterwards Lindsay, Tyler and Daniel went to the hospital. Lindsay and Daniel gave a ring to", "correct_label": " Tyler", "model_predict": " Lindsay", "id": 1539}
+{"prompt": "Friends Stephanie, Jonathan and Danielle went to the garden. Stephanie and Danielle gave a ring to", "correct_label": " Jonathan", "model_predict": " the", "id": 1540}
+{"prompt": "Friends Erin, Amber and Lisa went to the store. Erin and Lisa gave a ring to", "correct_label": " Amber", "model_predict": " Erin", "id": 1541}
+{"prompt": "Afterwards David, Kenneth and Nicholas went to the school. David and Nicholas gave a computer to", "correct_label": " Kenneth", "model_predict": " David", "id": 1542}
+{"prompt": "Then, Allison, Matthew and Steven went to the office. Allison and Steven gave a ring to", "correct_label": " Matthew", "model_predict": " Steven", "id": 1543}
+{"prompt": "Then, Kevin, Nicholas and Christopher went to the restaurant. Kevin and Christopher gave a drink to", "correct_label": " Nicholas", "model_predict": " the", "id": 1545}
+{"prompt": "Friends Andrew, James and Kevin went to the office. Andrew and Kevin gave a snack to", "correct_label": " James", "model_predict": " Andrew", "id": 1547}
+{"prompt": "Then, Christine, Rebecca and Tiffany went to the school. Christine and Tiffany gave a necklace to", "correct_label": " Rebecca", "model_predict": " the", "id": 1548}
+{"prompt": "Afterwards Richard, Melissa and Cody went to the restaurant. Richard and Cody gave a drink to", "correct_label": " Melissa", "model_predict": " Richard", "id": 1549}
+{"prompt": "Friends Kimberly, Stephen and Jessica went to the station. Kimberly and Jessica gave a kiss to", "correct_label": " Stephen", "model_predict": " the", "id": 1554}
+{"prompt": "Then, Kenneth, Stephanie and Sean went to the school. Kenneth and Sean gave a drink to", "correct_label": " Stephanie", "model_predict": " the", "id": 1555}
+{"prompt": "Then, Kristen, Crystal and Michael went to the garden. Kristen and Michael gave a necklace to", "correct_label": " Crystal", "model_predict": " Michael", "id": 1557}
+{"prompt": "Friends Samuel, Stephanie and Daniel went to the store. Samuel and Daniel gave a drink to", "correct_label": " Stephanie", "model_predict": " the", "id": 1558}
+{"prompt": "Friends Erica, Jose and Nicole went to the house. Erica and Nicole gave a kiss to", "correct_label": " Jose", "model_predict": " each", "id": 1559}
+{"prompt": "Friends Samantha, Jonathan and Eric went to the school. Samantha and Eric gave a computer to", "correct_label": " Jonathan", "model_predict": " the", "id": 1561}
+{"prompt": "When Matthew, Sarah and Thomas arrived at the store, Matthew and Thomas gave a necklace to", "correct_label": " Sarah", "model_predict": " the", "id": 1564}
+{"prompt": "Friends Nicole, Alexander and Aaron went to the station. Nicole and Aaron gave a necklace to", "correct_label": " Alexander", "model_predict": " Nicole", "id": 1565}
+{"prompt": "Then, Erica, Jose and Sean went to the house. Erica and Sean gave a necklace to", "correct_label": " Jose", "model_predict": " Erica", "id": 1566}
+{"prompt": "Then, Adam, Michael and Joseph went to the school. Adam and Joseph gave a kiss to", "correct_label": " Michael", "model_predict": " the", "id": 1567}
+{"prompt": "Afterwards Richard, Kenneth and Rebecca went to the station. Richard and Rebecca gave a snack to", "correct_label": " Kenneth", "model_predict": " Richard", "id": 1569}
+{"prompt": "Then, Christopher, Crystal and Adam went to the school. Christopher and Adam gave a bone to", "correct_label": " Crystal", "model_predict": " the", "id": 1570}
+{"prompt": "When Bradley, Laura and Stephen arrived at the school, Bradley and Stephen gave a necklace to", "correct_label": " Laura", "model_predict": " the", "id": 1571}
+{"prompt": "Friends Andrea, Jason and Matthew went to the office. Andrea and Matthew gave a basketball to", "correct_label": " Jason", "model_predict": " the", "id": 1572}
+{"prompt": "Afterwards Steven, Sarah and Jeremy went to the store. Steven and Jeremy gave a snack to", "correct_label": " Sarah", "model_predict": " Jeremy", "id": 1573}
+{"prompt": "Then, Vanessa, Lindsay and Samantha went to the school. Vanessa and Samantha gave a drink to", "correct_label": " Lindsay", "model_predict": " the", "id": 1574}
+{"prompt": "When Paul, Mark and Scott arrived at the house, Paul and Scott gave a drink to", "correct_label": " Mark", "model_predict": " the", "id": 1575}
+{"prompt": "Afterwards Scott, Anthony and Heather went to the garden. Scott and Heather gave a necklace to", "correct_label": " Anthony", "model_predict": " Scott", "id": 1576}
+{"prompt": "Friends Kristen, Nathan and Emily went to the station. Kristen and Emily gave a necklace to", "correct_label": " Nathan", "model_predict": " the", "id": 1578}
+{"prompt": "When Samuel, Nicole and Ryan arrived at the office, Samuel and Ryan gave a snack to", "correct_label": " Nicole", "model_predict": " the", "id": 1579}
+{"prompt": "Friends Andrew, Charles and Christina went to the restaurant. Andrew and Christina gave a drink to", "correct_label": " Charles", "model_predict": " the", "id": 1580}
+{"prompt": "Friends Michael, Richard and Sean went to the station. Michael and Sean gave a computer to", "correct_label": " Richard", "model_predict": " Michael", "id": 1581}
+{"prompt": "When Joshua, Jacob and Lindsay arrived at the station, Joshua and Lindsay gave a necklace to", "correct_label": " Jacob", "model_predict": " the", "id": 1582}
+{"prompt": "Afterwards William, Ashley and Jennifer went to the house. William and Jennifer gave a basketball to", "correct_label": " Ashley", "model_predict": " William", "id": 1583}
+{"prompt": "Then, Joseph, Kevin and Adam went to the hospital. Joseph and Adam gave a ring to", "correct_label": " Kevin", "model_predict": " Joseph", "id": 1584}
+{"prompt": "Afterwards Jose, Elizabeth and Katie went to the house. Jose and Katie gave a kiss to", "correct_label": " Elizabeth", "model_predict": " the", "id": 1585}
+{"prompt": "Then, Nicholas, Patrick and Andrea went to the hospital. Nicholas and Andrea gave a ring to", "correct_label": " Patrick", "model_predict": " Nicholas", "id": 1586}
+{"prompt": "Friends Jose, Sarah and Lisa went to the house. Jose and Lisa gave a kiss to", "correct_label": " Sarah", "model_predict": " each", "id": 1587}
+{"prompt": "Afterwards Brandon, Kenneth and Lindsey went to the school. Brandon and Lindsey gave a computer to", "correct_label": " Kenneth", "model_predict": " Brandon", "id": 1589}
+{"prompt": "Afterwards David, Ashley and Jesse went to the garden. David and Jesse gave a ring to", "correct_label": " Ashley", "model_predict": " David", "id": 1590}
+{"prompt": "When Joshua, Dustin and William arrived at the restaurant, Joshua and William gave a kiss to", "correct_label": " Dustin", "model_predict": " the", "id": 1592}
+{"prompt": "Friends Jason, Melissa and Joshua went to the store. Jason and Joshua gave a necklace to", "correct_label": " Melissa", "model_predict": " the", "id": 1593}
+{"prompt": "Then, Amber, Lindsey and Heather went to the store. Amber and Heather gave a snack to", "correct_label": " Lindsey", "model_predict": " the", "id": 1594}
+{"prompt": "Friends Brian, James and Daniel went to the station. Brian and Daniel gave a snack to", "correct_label": " James", "model_predict": " the", "id": 1595}
+{"prompt": "Then, John, Thomas and Mary went to the house. John and Mary gave a computer to", "correct_label": " Thomas", "model_predict": " John", "id": 1597}
+{"prompt": "Afterwards Shannon, Brian and William went to the school. Shannon and William gave a necklace to", "correct_label": " Brian", "model_predict": " Shannon", "id": 1598}
+{"prompt": "Then, Andrew, Michelle and Steven went to the house. Andrew and Steven gave a ring to", "correct_label": " Michelle", "model_predict": " the", "id": 1599}
+{"prompt": "When Andrea, Brittany and Nicole arrived at the school, Andrea and Nicole gave a ring to", "correct_label": " Brittany", "model_predict": " the", "id": 1600}
+{"prompt": "When Kimberly, Nicholas and Erin arrived at the store, Kimberly and Erin gave a kiss to", "correct_label": " Nicholas", "model_predict": " each", "id": 1602}
+{"prompt": "Friends Brandon, Kenneth and Travis went to the office. Brandon and Travis gave a computer to", "correct_label": " Kenneth", "model_predict": " Brandon", "id": 1604}
+{"prompt": "Friends Michael, Samantha and Sara went to the garden. Michael and Sara gave a drink to", "correct_label": " Samantha", "model_predict": " the", "id": 1605}
+{"prompt": "Friends James, Anthony and Kelly went to the hospital. James and Kelly gave a necklace to", "correct_label": " Anthony", "model_predict": " the", "id": 1607}
+{"prompt": "When Sara, Amber and Sarah arrived at the hospital, Sara and Sarah gave a drink to", "correct_label": " Amber", "model_predict": " the", "id": 1608}
+{"prompt": "Afterwards Danielle, Shannon and Heather went to the restaurant. Danielle and Heather gave a bone to", "correct_label": " Shannon", "model_predict": " Danielle", "id": 1609}
+{"prompt": "Friends Dustin, Daniel and Kenneth went to the station. Dustin and Kenneth gave a basketball to", "correct_label": " Daniel", "model_predict": " Dustin", "id": 1610}
+{"prompt": "Then, Scott, Amy and Katie went to the school. Scott and Katie gave a drink to", "correct_label": " Amy", "model_predict": " Scott", "id": 1611}
+{"prompt": "Then, Jeffrey, Brian and Richard went to the house. Jeffrey and Richard gave a ring to", "correct_label": " Brian", "model_predict": " Richard", "id": 1612}
+{"prompt": "Afterwards John, Christina and Stephanie went to the house. John and Stephanie gave a bone to", "correct_label": " Christina", "model_predict": " John", "id": 1613}
+{"prompt": "When Jennifer, Ashley and Katherine arrived at the hospital, Jennifer and Katherine gave a kiss to", "correct_label": " Ashley", "model_predict": " the", "id": 1616}
+{"prompt": "Then, Allison, Alicia and Rachel went to the house. Allison and Rachel gave a drink to", "correct_label": " Alicia", "model_predict": " Rachel", "id": 1617}
+{"prompt": "When Daniel, Kyle and Jeremy arrived at the house, Daniel and Jeremy gave a snack to", "correct_label": " Kyle", "model_predict": " their", "id": 1618}
+{"prompt": "Afterwards Erin, Angela and Joseph went to the house. Erin and Joseph gave a snack to", "correct_label": " Angela", "model_predict": " Erin", "id": 1619}
+{"prompt": "Afterwards John, Alexander and Jacob went to the school. John and Jacob gave a kiss to", "correct_label": " Alexander", "model_predict": " each", "id": 1621}
+{"prompt": "Friends Samuel, Joshua and Adam went to the office. Samuel and Adam gave a drink to", "correct_label": " Joshua", "model_predict": " the", "id": 1622}
+{"prompt": "When Megan, Melissa and William arrived at the hospital, Megan and William gave a kiss to", "correct_label": " Melissa", "model_predict": " each", "id": 1623}
+{"prompt": "Friends Kristen, Bradley and Travis went to the school. Kristen and Travis gave a computer to", "correct_label": " Bradley", "model_predict": " the", "id": 1625}
+{"prompt": "Friends Stephen, Samantha and Timothy went to the house. Stephen and Timothy gave a computer to", "correct_label": " Samantha", "model_predict": " Stephen", "id": 1626}
+{"prompt": "Friends Amanda, Brian and Michael went to the hospital. Amanda and Michael gave a kiss to", "correct_label": " Brian", "model_predict": " each", "id": 1627}
+{"prompt": "When Kevin, Robert and Nicholas arrived at the garden, Kevin and Nicholas gave a bone to", "correct_label": " Robert", "model_predict": " the", "id": 1628}
+{"prompt": "Then, Jacob, Katie and Tiffany went to the station. Jacob and Tiffany gave a computer to", "correct_label": " Katie", "model_predict": " Jacob", "id": 1629}
+{"prompt": "Then, Matthew, Jessica and Danielle went to the garden. Matthew and Danielle gave a computer to", "correct_label": " Jessica", "model_predict": " Matthew", "id": 1630}
+{"prompt": "When Shannon, Sarah and Samuel arrived at the hospital, Shannon and Samuel gave a necklace to", "correct_label": " Sarah", "model_predict": " the", "id": 1631}
+{"prompt": "Friends Sara, Erin and David went to the house. Sara and David gave a necklace to", "correct_label": " Erin", "model_predict": " Sara", "id": 1632}
+{"prompt": "Then, Brandon, Scott and Richard went to the office. Brandon and Richard gave a snack to", "correct_label": " Scott", "model_predict": " Brandon", "id": 1633}
+{"prompt": "Friends Alicia, Bradley and Nathan went to the store. Alicia and Nathan gave a necklace to", "correct_label": " Bradley", "model_predict": " the", "id": 1634}
+{"prompt": "Friends Steven, Sean and Brittany went to the office. Steven and Brittany gave a basketball to", "correct_label": " Sean", "model_predict": " Steven", "id": 1635}
+{"prompt": "Afterwards Stephen, Kelly and Robert went to the school. Stephen and Robert gave a necklace to", "correct_label": " Kelly", "model_predict": " the", "id": 1639}
+{"prompt": "When Brittany, Christine and Rachel arrived at the school, Brittany and Rachel gave a necklace to", "correct_label": " Christine", "model_predict": " the", "id": 1641}
+{"prompt": "Afterwards Brian, Michael and Laura went to the station. Brian and Laura gave a computer to", "correct_label": " Michael", "model_predict": " Brian", "id": 1644}
+{"prompt": "Afterwards Sara, Lindsey and Anthony went to the house. Sara and Anthony gave a drink to", "correct_label": " Lindsey", "model_predict": " the", "id": 1645}
+{"prompt": "When Jessica, Jesse and Jason arrived at the hospital, Jessica and Jason gave a computer to", "correct_label": " Jesse", "model_predict": " the", "id": 1647}
+{"prompt": "Friends Elizabeth, Lindsay and Lindsey went to the store. Elizabeth and Lindsey gave a necklace to", "correct_label": " Lindsay", "model_predict": " the", "id": 1648}
+{"prompt": "Friends Jessica, Mary and Lauren went to the garden. Jessica and Lauren gave a bone to", "correct_label": " Mary", "model_predict": " the", "id": 1649}
+{"prompt": "When Joseph, John and Jacob arrived at the station, Joseph and Jacob gave a kiss to", "correct_label": " John", "model_predict": " each", "id": 1650}
+{"prompt": "Friends John, Bryan and Erin went to the garden. John and Erin gave a bone to", "correct_label": " Bryan", "model_predict": " the", "id": 1652}
+{"prompt": "Then, Lauren, Ashley and Bryan went to the store. Lauren and Bryan gave a necklace to", "correct_label": " Ashley", "model_predict": " Lauren", "id": 1653}
+{"prompt": "When Kyle, Bryan and Lindsey arrived at the house, Kyle and Lindsey gave a computer to", "correct_label": " Bryan", "model_predict": " Kyle", "id": 1654}
+{"prompt": "Then, Lindsey, Daniel and Brian went to the house. Lindsey and Brian gave a ring to", "correct_label": " Daniel", "model_predict": " Lindsey", "id": 1657}
+{"prompt": "Then, Jeffrey, Jennifer and Charles went to the office. Jeffrey and Charles gave a kiss to", "correct_label": " Jennifer", "model_predict": " the", "id": 1659}
+{"prompt": "Then, Erin, Daniel and Ryan went to the station. Erin and Ryan gave a computer to", "correct_label": " Daniel", "model_predict": " Erin", "id": 1660}
+{"prompt": "Then, Richard, Bradley and Scott went to the house. Richard and Scott gave a basketball to", "correct_label": " Bradley", "model_predict": " Richard", "id": 1661}
+{"prompt": "When Travis, Sean and Christopher arrived at the office, Travis and Christopher gave a drink to", "correct_label": " Sean", "model_predict": " the", "id": 1662}
+{"prompt": "When Katherine, Ashley and Andrew arrived at the office, Katherine and Andrew gave a snack to", "correct_label": " Ashley", "model_predict": " the", "id": 1664}
+{"prompt": "Afterwards Jamie, Lauren and Scott went to the office. Jamie and Scott gave a computer to", "correct_label": " Lauren", "model_predict": " Jamie", "id": 1665}
+{"prompt": "When David, Jonathan and Travis arrived at the hospital, David and Travis gave a drink to", "correct_label": " Jonathan", "model_predict": " the", "id": 1666}
+{"prompt": "Friends Samuel, Joseph and Brandon went to the school. Samuel and Brandon gave a necklace to", "correct_label": " Joseph", "model_predict": " the", "id": 1667}
+{"prompt": "Friends Justin, Emily and Joshua went to the garden. Justin and Joshua gave a bone to", "correct_label": " Emily", "model_predict": " the", "id": 1668}
+{"prompt": "Afterwards Shannon, Charles and Cody went to the house. Shannon and Cody gave a snack to", "correct_label": " Charles", "model_predict": " Shannon", "id": 1669}
+{"prompt": "Afterwards Lisa, Erica and Bryan went to the store. Lisa and Bryan gave a computer to", "correct_label": " Erica", "model_predict": " Lisa", "id": 1670}
+{"prompt": "Then, Erica, Gregory and Jacob went to the restaurant. Erica and Jacob gave a bone to", "correct_label": " Gregory", "model_predict": " the", "id": 1671}
+{"prompt": "When Tyler, Justin and Ashley arrived at the office, Tyler and Ashley gave a kiss to", "correct_label": " Justin", "model_predict": " the", "id": 1672}
+{"prompt": "Afterwards Nicole, Paul and Travis went to the station. Nicole and Travis gave a basketball to", "correct_label": " Paul", "model_predict": " Nicole", "id": 1673}
+{"prompt": "Afterwards John, Kevin and Kyle went to the hospital. John and Kyle gave a snack to", "correct_label": " Kevin", "model_predict": " John", "id": 1674}
+{"prompt": "When Eric, Anthony and Amber arrived at the house, Eric and Amber gave a kiss to", "correct_label": " Anthony", "model_predict": " each", "id": 1675}
+{"prompt": "When Amy, Michelle and Laura arrived at the garden, Amy and Laura gave a necklace to", "correct_label": " Michelle", "model_predict": " Amy", "id": 1676}
+{"prompt": "Friends Jeffrey, Adam and Katherine went to the hospital. Jeffrey and Katherine gave a drink to", "correct_label": " Adam", "model_predict": " the", "id": 1677}
+{"prompt": "Afterwards Melissa, Thomas and William went to the school. Melissa and William gave a bone to", "correct_label": " Thomas", "model_predict": " the", "id": 1678}
+{"prompt": "Then, Ryan, Allison and Heather went to the store. Ryan and Heather gave a bone to", "correct_label": " Allison", "model_predict": " Ryan", "id": 1680}
+{"prompt": "Then, Brittany, Anthony and Erin went to the garden. Brittany and Erin gave a snack to", "correct_label": " Anthony", "model_predict": " the", "id": 1681}
+{"prompt": "When Joseph, Jessica and Kelly arrived at the station, Joseph and Kelly gave a drink to", "correct_label": " Jessica", "model_predict": " the", "id": 1682}
+{"prompt": "When Jeffrey, Jennifer and Joshua arrived at the school, Jeffrey and Joshua gave a computer to", "correct_label": " Jennifer", "model_predict": " the", "id": 1683}
+{"prompt": "Afterwards Jesse, Allison and Andrew went to the restaurant. Jesse and Andrew gave a bone to", "correct_label": " Allison", "model_predict": " Jesse", "id": 1684}
+{"prompt": "Afterwards Stephanie, Lisa and Aaron went to the garden. Stephanie and Aaron gave a ring to", "correct_label": " Lisa", "model_predict": " Stephanie", "id": 1686}
+{"prompt": "Friends Mark, Amber and Christina went to the house. Mark and Christina gave a drink to", "correct_label": " Amber", "model_predict": " Mark", "id": 1687}
+{"prompt": "Then, Stephanie, Lindsey and Bryan went to the office. Stephanie and Bryan gave a ring to", "correct_label": " Lindsey", "model_predict": " Stephanie", "id": 1688}
+{"prompt": "When Nathan, Kenneth and Brian arrived at the school, Nathan and Brian gave a snack to", "correct_label": " Kenneth", "model_predict": " the", "id": 1689}
+{"prompt": "Then, Christina, Erica and Kelly went to the school. Christina and Kelly gave a snack to", "correct_label": " Erica", "model_predict": " the", "id": 1690}
+{"prompt": "Friends Courtney, Anthony and Lindsey went to the hospital. Courtney and Lindsey gave a bone to", "correct_label": " Anthony", "model_predict": " Lindsey", "id": 1691}
+{"prompt": "Friends Brian, Jessica and Elizabeth went to the store. Brian and Elizabeth gave a snack to", "correct_label": " Jessica", "model_predict": " Brian", "id": 1692}
+{"prompt": "Friends Lindsay, Nicole and Lauren went to the house. Lindsay and Lauren gave a drink to", "correct_label": " Nicole", "model_predict": " the", "id": 1694}
+{"prompt": "Friends Brian, James and Bryan went to the store. Brian and Bryan gave a drink to", "correct_label": " James", "model_predict": " the", "id": 1695}
+{"prompt": "Then, Aaron, Timothy and Robert went to the school. Aaron and Robert gave a kiss to", "correct_label": " Timothy", "model_predict": " each", "id": 1697}
+{"prompt": "Friends Jose, Kevin and Ashley went to the hospital. Jose and Ashley gave a kiss to", "correct_label": " Kevin", "model_predict": " the", "id": 1698}
+{"prompt": "When Samantha, Dustin and Mary arrived at the house, Samantha and Mary gave a snack to", "correct_label": " Dustin", "model_predict": " the", "id": 1699}
+{"prompt": "Friends Charles, Benjamin and Brian went to the store. Charles and Brian gave a kiss to", "correct_label": " Benjamin", "model_predict": " the", "id": 1700}
+{"prompt": "Friends Tiffany, Erica and Heather went to the house. Tiffany and Heather gave a computer to", "correct_label": " Erica", "model_predict": " Tiffany", "id": 1701}
+{"prompt": "Then, Stephen, Jamie and Charles went to the hospital. Stephen and Charles gave a snack to", "correct_label": " Jamie", "model_predict": " Stephen", "id": 1702}
+{"prompt": "Friends Christina, Amber and Jason went to the hospital. Christina and Jason gave a bone to", "correct_label": " Amber", "model_predict": " the", "id": 1703}
+{"prompt": "Then, Heather, Andrea and Mark went to the hospital. Heather and Mark gave a drink to", "correct_label": " Andrea", "model_predict": " Mark", "id": 1705}
+{"prompt": "Afterwards Shannon, Stephen and Lauren went to the house. Shannon and Lauren gave a computer to", "correct_label": " Stephen", "model_predict": " Shannon", "id": 1708}
+{"prompt": "When Sara, Sarah and Heather arrived at the school, Sara and Heather gave a kiss to", "correct_label": " Sarah", "model_predict": " the", "id": 1709}
+{"prompt": "When Emily, Brian and Sean arrived at the school, Emily and Sean gave a ring to", "correct_label": " Brian", "model_predict": " the", "id": 1710}
+{"prompt": "Friends Aaron, Paul and Jamie went to the garden. Aaron and Jamie gave a kiss to", "correct_label": " Paul", "model_predict": " each", "id": 1711}
+{"prompt": "Friends Aaron, Jesse and Nathan went to the house. Aaron and Nathan gave a snack to", "correct_label": " Jesse", "model_predict": " Aaron", "id": 1712}
+{"prompt": "Then, Lindsey, Robert and Gregory went to the hospital. Lindsey and Gregory gave a bone to", "correct_label": " Robert", "model_predict": " Lindsey", "id": 1713}
+{"prompt": "Then, Mary, Ashley and Sarah went to the garden. Mary and Sarah gave a snack to", "correct_label": " Ashley", "model_predict": " the", "id": 1714}
+{"prompt": "Then, Adam, Daniel and Jennifer went to the garden. Adam and Jennifer gave a basketball to", "correct_label": " Daniel", "model_predict": " Adam", "id": 1715}
+{"prompt": "Then, Lauren, Christopher and Jennifer went to the school. Lauren and Jennifer gave a basketball to", "correct_label": " Christopher", "model_predict": " the", "id": 1716}
+{"prompt": "Friends Bryan, Elizabeth and Megan went to the restaurant. Bryan and Megan gave a basketball to", "correct_label": " Elizabeth", "model_predict": " Bryan", "id": 1717}
+{"prompt": "Friends Jeffrey, Emily and Richard went to the garden. Jeffrey and Richard gave a drink to", "correct_label": " Emily", "model_predict": " the", "id": 1719}
+{"prompt": "Afterwards Vanessa, Katherine and Patrick went to the office. Vanessa and Patrick gave a computer to", "correct_label": " Katherine", "model_predict": " Vanessa", "id": 1721}
+{"prompt": "Then, Christina, Erin and Adam went to the school. Christina and Adam gave a drink to", "correct_label": " Erin", "model_predict": " the", "id": 1722}
+{"prompt": "Friends Cody, Daniel and Mark went to the office. Cody and Mark gave a basketball to", "correct_label": " Daniel", "model_predict": " Cody", "id": 1723}
+{"prompt": "Then, Nathan, Patrick and Michael went to the office. Nathan and Michael gave a drink to", "correct_label": " Patrick", "model_predict": " Nathan", "id": 1724}
+{"prompt": "When Travis, Nathan and William arrived at the school, Travis and William gave a basketball to", "correct_label": " Nathan", "model_predict": " the", "id": 1725}
+{"prompt": "Afterwards Eric, Ashley and Cody went to the garden. Eric and Cody gave a computer to", "correct_label": " Ashley", "model_predict": " Eric", "id": 1726}
+{"prompt": "When Jacob, Christine and Jeremy arrived at the hospital, Jacob and Jeremy gave a bone to", "correct_label": " Christine", "model_predict": " Jeremy", "id": 1727}
+{"prompt": "When Benjamin, Jennifer and Laura arrived at the station, Benjamin and Laura gave a bone to", "correct_label": " Jennifer", "model_predict": " the", "id": 1728}
+{"prompt": "When Lauren, Lindsay and Tiffany arrived at the hospital, Lauren and Tiffany gave a snack to", "correct_label": " Lindsay", "model_predict": " the", "id": 1729}
+{"prompt": "Friends Lindsey, Nicole and Mark went to the office. Lindsey and Mark gave a necklace to", "correct_label": " Nicole", "model_predict": " Lindsey", "id": 1730}
+{"prompt": "Afterwards Christine, Vanessa and Anthony went to the school. Christine and Anthony gave a necklace to", "correct_label": " Vanessa", "model_predict": " the", "id": 1731}
+{"prompt": "Afterwards Rebecca, Alicia and Kristen went to the office. Rebecca and Kristen gave a basketball to", "correct_label": " Alicia", "model_predict": " Rebecca", "id": 1733}
+{"prompt": "Then, Daniel, Scott and Rebecca went to the garden. Daniel and Rebecca gave a drink to", "correct_label": " Scott", "model_predict": " Daniel", "id": 1734}
+{"prompt": "Afterwards Jesse, Alicia and Brittany went to the school. Jesse and Brittany gave a ring to", "correct_label": " Alicia", "model_predict": " Jesse", "id": 1735}
+{"prompt": "Afterwards Benjamin, Kristen and Sarah went to the garden. Benjamin and Sarah gave a computer to", "correct_label": " Kristen", "model_predict": " Benjamin", "id": 1736}
+{"prompt": "Then, Courtney, Katie and Stephen went to the garden. Courtney and Stephen gave a necklace to", "correct_label": " Katie", "model_predict": " Courtney", "id": 1737}
+{"prompt": "Friends Brandon, Rebecca and Lisa went to the house. Brandon and Lisa gave a drink to", "correct_label": " Rebecca", "model_predict": " the", "id": 1738}
+{"prompt": "Afterwards Kyle, Brittany and Katie went to the garden. Kyle and Katie gave a basketball to", "correct_label": " Brittany", "model_predict": " Kyle", "id": 1739}
+{"prompt": "When Katherine, Ryan and Heather arrived at the garden, Katherine and Heather gave a drink to", "correct_label": " Ryan", "model_predict": " the", "id": 1740}
+{"prompt": "Then, Angela, Christine and Steven went to the garden. Angela and Steven gave a ring to", "correct_label": " Christine", "model_predict": " Angela", "id": 1741}
+{"prompt": "Afterwards Shannon, Samuel and Lisa went to the station. Shannon and Lisa gave a snack to", "correct_label": " Samuel", "model_predict": " Sam", "id": 1744}
+{"prompt": "Then, Brian, Thomas and Brittany went to the store. Brian and Brittany gave a drink to", "correct_label": " Thomas", "model_predict": " the", "id": 1746}
+{"prompt": "Friends Katherine, Allison and Mary went to the office. Katherine and Mary gave a necklace to", "correct_label": " Allison", "model_predict": " the", "id": 1747}
+{"prompt": "When Kenneth, Laura and Megan arrived at the hospital, Kenneth and Megan gave a kiss to", "correct_label": " Laura", "model_predict": " each", "id": 1748}
+{"prompt": "Friends Danielle, Melissa and Ashley went to the store. Danielle and Ashley gave a snack to", "correct_label": " Melissa", "model_predict": " Danielle", "id": 1749}
+{"prompt": "When Richard, Justin and Heather arrived at the office, Richard and Heather gave a ring to", "correct_label": " Justin", "model_predict": " Richard", "id": 1750}
+{"prompt": "Then, Matthew, Lauren and Jesse went to the office. Matthew and Jesse gave a drink to", "correct_label": " Lauren", "model_predict": " the", "id": 1751}
+{"prompt": "When Jeffrey, Danielle and Nicole arrived at the school, Jeffrey and Nicole gave a drink to", "correct_label": " Danielle", "model_predict": " the", "id": 1752}
+{"prompt": "Then, Sarah, Allison and Samantha went to the hospital. Sarah and Samantha gave a basketball to", "correct_label": " Allison", "model_predict": " the", "id": 1754}
+{"prompt": "Then, Shannon, Rebecca and Brian went to the station. Shannon and Brian gave a ring to", "correct_label": " Rebecca", "model_predict": " Shannon", "id": 1755}
+{"prompt": "Friends Amanda, Sean and Brian went to the hospital. Amanda and Brian gave a snack to", "correct_label": " Sean", "model_predict": " the", "id": 1757}
+{"prompt": "Afterwards Tyler, Lauren and Dustin went to the garden. Tyler and Dustin gave a drink to", "correct_label": " Lauren", "model_predict": " Tyler", "id": 1759}
+{"prompt": "When Rebecca, Jamie and Charles arrived at the station, Rebecca and Charles gave a bone to", "correct_label": " Jamie", "model_predict": " the", "id": 1762}
+{"prompt": "When Kimberly, Nathan and Jamie arrived at the restaurant, Kimberly and Jamie gave a basketball to", "correct_label": " Nathan", "model_predict": " the", "id": 1763}
+{"prompt": "Afterwards Jamie, Aaron and Michael went to the restaurant. Jamie and Michael gave a bone to", "correct_label": " Aaron", "model_predict": " the", "id": 1764}
+{"prompt": "Then, Nathan, Justin and Lindsay went to the school. Nathan and Lindsay gave a drink to", "correct_label": " Justin", "model_predict": " the", "id": 1765}
+{"prompt": "Then, Thomas, Erica and Katherine went to the house. Thomas and Katherine gave a kiss to", "correct_label": " Erica", "model_predict": " Thomas", "id": 1766}
+{"prompt": "Then, Scott, Vanessa and Tiffany went to the station. Scott and Tiffany gave a basketball to", "correct_label": " Vanessa", "model_predict": " Scott", "id": 1767}
+{"prompt": "Friends Anthony, Aaron and Bradley went to the office. Anthony and Bradley gave a necklace to", "correct_label": " Aaron", "model_predict": " Anthony", "id": 1769}
+{"prompt": "Afterwards Michelle, Lindsay and Matthew went to the restaurant. Michelle and Matthew gave a kiss to", "correct_label": " Lindsay", "model_predict": " each", "id": 1772}
+{"prompt": "When Michelle, Lindsey and Joshua arrived at the house, Michelle and Joshua gave a snack to", "correct_label": " Lindsey", "model_predict": " the", "id": 1774}
+{"prompt": "Then, Justin, Thomas and Joshua went to the garden. Justin and Joshua gave a snack to", "correct_label": " Thomas", "model_predict": " the", "id": 1775}
+{"prompt": "Friends Amber, Tyler and Charles went to the school. Amber and Charles gave a snack to", "correct_label": " Tyler", "model_predict": " the", "id": 1776}
+{"prompt": "When Laura, Timothy and Aaron arrived at the restaurant, Laura and Aaron gave a necklace to", "correct_label": " Timothy", "model_predict": " the", "id": 1777}
+{"prompt": "Afterwards John, Kenneth and Erin went to the station. John and Erin gave a drink to", "correct_label": " Kenneth", "model_predict": " John", "id": 1778}
+{"prompt": "Friends Vanessa, Jeffrey and Jonathan went to the garden. Vanessa and Jonathan gave a necklace to", "correct_label": " Jeffrey", "model_predict": " the", "id": 1779}
+{"prompt": "When Amanda, Cody and David arrived at the garden, Amanda and David gave a kiss to", "correct_label": " Cody", "model_predict": " each", "id": 1781}
+{"prompt": "Friends Katie, Kimberly and Jennifer went to the house. Katie and Jennifer gave a ring to", "correct_label": " Kimberly", "model_predict": " the", "id": 1782}
+{"prompt": "Afterwards Mark, Lisa and Rebecca went to the station. Mark and Rebecca gave a basketball to", "correct_label": " Lisa", "model_predict": " Mark", "id": 1784}
+{"prompt": "Friends Dustin, Adam and Thomas went to the store. Dustin and Thomas gave a computer to", "correct_label": " Adam", "model_predict": " Dustin", "id": 1785}
+{"prompt": "Afterwards Lauren, Christina and Bradley went to the store. Lauren and Bradley gave a basketball to", "correct_label": " Christina", "model_predict": " Lauren", "id": 1786}
+{"prompt": "Afterwards Justin, Paul and Angela went to the garden. Justin and Angela gave a ring to", "correct_label": " Paul", "model_predict": " Angela", "id": 1787}
+{"prompt": "Afterwards Elizabeth, Charles and Jennifer went to the hospital. Elizabeth and Jennifer gave a necklace to", "correct_label": " Charles", "model_predict": " Elizabeth", "id": 1788}
+{"prompt": "Afterwards Emily, Alicia and Lauren went to the garden. Emily and Lauren gave a computer to", "correct_label": " Alicia", "model_predict": " Emily", "id": 1789}
+{"prompt": "When Amber, Christine and Michelle arrived at the hospital, Amber and Michelle gave a snack to", "correct_label": " Christine", "model_predict": " the", "id": 1790}
+{"prompt": "Friends Brian, Vanessa and Danielle went to the office. Brian and Danielle gave a ring to", "correct_label": " Vanessa", "model_predict": " Brian", "id": 1791}
+{"prompt": "Then, Erica, Erin and Angela went to the house. Erica and Angela gave a basketball to", "correct_label": " Erin", "model_predict": " the", "id": 1792}
+{"prompt": "When Timothy, Michelle and Jesse arrived at the store, Timothy and Jesse gave a necklace to", "correct_label": " Michelle", "model_predict": " the", "id": 1793}
+{"prompt": "Friends Elizabeth, Samuel and Jason went to the station. Elizabeth and Jason gave a snack to", "correct_label": " Samuel", "model_predict": " the", "id": 1796}
+{"prompt": "Friends Nicholas, Jamie and Angela went to the office. Nicholas and Angela gave a necklace to", "correct_label": " Jamie", "model_predict": " Angela", "id": 1798}
+{"prompt": "When Jessica, Kevin and Angela arrived at the restaurant, Jessica and Angela gave a drink to", "correct_label": " Kevin", "model_predict": " the", "id": 1799}
+{"prompt": "Then, Sean, Ryan and Jose went to the garden. Sean and Jose gave a computer to", "correct_label": " Ryan", "model_predict": " Sean", "id": 1800}
+{"prompt": "Friends Rachel, Kristen and Mary went to the school. Rachel and Mary gave a basketball to", "correct_label": " Kristen", "model_predict": " the", "id": 1801}
+{"prompt": "Friends Stephanie, Andrea and Daniel went to the house. Stephanie and Daniel gave a computer to", "correct_label": " Andrea", "model_predict": " Stephanie", "id": 1803}
+{"prompt": "When Amy, James and Anthony arrived at the store, Amy and Anthony gave a drink to", "correct_label": " James", "model_predict": " the", "id": 1804}
+{"prompt": "Friends Adam, Jessica and Jeremy went to the restaurant. Adam and Jeremy gave a basketball to", "correct_label": " Jessica", "model_predict": " Adam", "id": 1805}
+{"prompt": "When Cody, Ryan and Alexander arrived at the office, Cody and Alexander gave a bone to", "correct_label": " Ryan", "model_predict": " the", "id": 1808}
+{"prompt": "Afterwards Scott, Katherine and Rebecca went to the station. Scott and Rebecca gave a kiss to", "correct_label": " Katherine", "model_predict": " the", "id": 1809}
+{"prompt": "When Tiffany, Erin and Nicole arrived at the restaurant, Tiffany and Nicole gave a snack to", "correct_label": " Erin", "model_predict": " the", "id": 1811}
+{"prompt": "Afterwards Jonathan, Sara and Benjamin went to the school. Jonathan and Benjamin gave a ring to", "correct_label": " Sara", "model_predict": " Benjamin", "id": 1812}
+{"prompt": "Then, John, Lindsey and Shannon went to the hospital. John and Shannon gave a basketball to", "correct_label": " Lindsey", "model_predict": " John", "id": 1813}
+{"prompt": "Then, Jesse, Michelle and John went to the station. Jesse and John gave a kiss to", "correct_label": " Michelle", "model_predict": " the", "id": 1814}
+{"prompt": "Friends Steven, Jennifer and Joshua went to the restaurant. Steven and Joshua gave a bone to", "correct_label": " Jennifer", "model_predict": " the", "id": 1816}
+{"prompt": "Then, Jeffrey, Erica and Megan went to the store. Jeffrey and Megan gave a snack to", "correct_label": " Erica", "model_predict": " the", "id": 1817}
+{"prompt": "Friends Dustin, Jamie and Christopher went to the hospital. Dustin and Christopher gave a basketball to", "correct_label": " Jamie", "model_predict": " Dustin", "id": 1819}
+{"prompt": "When Michelle, Thomas and William arrived at the school, Michelle and William gave a drink to", "correct_label": " Thomas", "model_predict": " the", "id": 1820}
+{"prompt": "Friends Jessica, Emily and Sean went to the restaurant. Jessica and Sean gave a drink to", "correct_label": " Emily", "model_predict": " Jessica", "id": 1821}
+{"prompt": "Then, Steven, Amber and Ashley went to the school. Steven and Ashley gave a basketball to", "correct_label": " Amber", "model_predict": " Steven", "id": 1822}
+{"prompt": "When Brian, Brandon and David arrived at the hospital, Brian and David gave a ring to", "correct_label": " Brandon", "model_predict": " the", "id": 1825}
+{"prompt": "Then, Rebecca, Kristen and Charles went to the house. Rebecca and Charles gave a necklace to", "correct_label": " Kristen", "model_predict": " Rebecca", "id": 1827}
+{"prompt": "Friends Nicholas, Kevin and Justin went to the school. Nicholas and Justin gave a computer to", "correct_label": " Kevin", "model_predict": " Nicholas", "id": 1828}
+{"prompt": "When Brian, Vanessa and Megan arrived at the station, Brian and Megan gave a basketball to", "correct_label": " Vanessa", "model_predict": " Brian", "id": 1829}
+{"prompt": "When Anthony, Lauren and William arrived at the store, Anthony and William gave a computer to", "correct_label": " Lauren", "model_predict": " Anthony", "id": 1831}
+{"prompt": "Friends Courtney, Heather and Lindsay went to the station. Courtney and Lindsay gave a necklace to", "correct_label": " Heather", "model_predict": " Courtney", "id": 1832}
+{"prompt": "Friends Christine, Steven and Mary went to the school. Christine and Mary gave a bone to", "correct_label": " Steven", "model_predict": " the", "id": 1834}
+{"prompt": "Then, Stephen, Emily and Lauren went to the store. Stephen and Lauren gave a basketball to", "correct_label": " Emily", "model_predict": " Stephen", "id": 1835}
+{"prompt": "When Jesse, Matthew and Erica arrived at the restaurant, Jesse and Erica gave a ring to", "correct_label": " Matthew", "model_predict": " the", "id": 1836}
+{"prompt": "When Jeremy, Jesse and Robert arrived at the store, Jeremy and Robert gave a computer to", "correct_label": " Jesse", "model_predict": " Jeremy", "id": 1837}
+{"prompt": "Afterwards Kenneth, David and Kristen went to the hospital. Kenneth and Kristen gave a computer to", "correct_label": " David", "model_predict": " Kenneth", "id": 1839}
+{"prompt": "When Scott, Christine and Emily arrived at the school, Scott and Emily gave a computer to", "correct_label": " Christine", "model_predict": " Scott", "id": 1840}
+{"prompt": "Friends Vanessa, Samuel and Erin went to the hospital. Vanessa and Erin gave a bone to", "correct_label": " Samuel", "model_predict": " the", "id": 1841}
+{"prompt": "Then, Brian, Brandon and Jessica went to the station. Brian and Jessica gave a necklace to", "correct_label": " Brandon", "model_predict": " Brian", "id": 1843}
+{"prompt": "Then, Sean, Scott and Thomas went to the house. Sean and Thomas gave a kiss to", "correct_label": " Scott", "model_predict": " each", "id": 1844}
+{"prompt": "When Jason, Aaron and Joseph arrived at the school, Jason and Joseph gave a basketball to", "correct_label": " Aaron", "model_predict": " the", "id": 1845}
+{"prompt": "Afterwards Lindsey, Jamie and Tiffany went to the house. Lindsey and Tiffany gave a kiss to", "correct_label": " Jamie", "model_predict": " Lindsey", "id": 1846}
+{"prompt": "Friends Christine, Nicholas and Justin went to the station. Christine and Justin gave a computer to", "correct_label": " Nicholas", "model_predict": " Christine", "id": 1847}
+{"prompt": "Friends Vanessa, Danielle and Melissa went to the house. Vanessa and Melissa gave a kiss to", "correct_label": " Danielle", "model_predict": " each", "id": 1849}
+{"prompt": "When Bradley, Tyler and Justin arrived at the station, Bradley and Justin gave a kiss to", "correct_label": " Tyler", "model_predict": " the", "id": 1850}
+{"prompt": "Then, Joshua, Jeremy and Katherine went to the office. Joshua and Katherine gave a necklace to", "correct_label": " Jeremy", "model_predict": " Joshua", "id": 1851}
+{"prompt": "Afterwards Michelle, Michael and Katie went to the hospital. Michelle and Katie gave a bone to", "correct_label": " Michael", "model_predict": " the", "id": 1852}
+{"prompt": "When Matthew, Andrew and Megan arrived at the house, Matthew and Megan gave a necklace to", "correct_label": " Andrew", "model_predict": " the", "id": 1854}
+{"prompt": "When Travis, Nathan and Elizabeth arrived at the garden, Travis and Elizabeth gave a computer to", "correct_label": " Nathan", "model_predict": " the", "id": 1855}
+{"prompt": "Then, Benjamin, Jason and James went to the store. Benjamin and James gave a basketball to", "correct_label": " Jason", "model_predict": " Benjamin", "id": 1856}
+{"prompt": "Afterwards Andrea, Heather and Gregory went to the office. Andrea and Gregory gave a drink to", "correct_label": " Heather", "model_predict": " Andrea", "id": 1857}
+{"prompt": "Then, Sean, Jason and Scott went to the house. Sean and Scott gave a bone to", "correct_label": " Jason", "model_predict": " the", "id": 1858}
+{"prompt": "Then, Scott, Kyle and Stephen went to the store. Scott and Stephen gave a basketball to", "correct_label": " Kyle", "model_predict": " Scott", "id": 1859}
+{"prompt": "Friends Bradley, Amy and Erin went to the house. Bradley and Erin gave a basketball to", "correct_label": " Amy", "model_predict": " Erin", "id": 1861}
+{"prompt": "When Scott, Danielle and Jason arrived at the school, Scott and Jason gave a drink to", "correct_label": " Danielle", "model_predict": " the", "id": 1862}
+{"prompt": "Friends Christina, Kimberly and Eric went to the house. Christina and Eric gave a basketball to", "correct_label": " Kimberly", "model_predict": " the", "id": 1863}
+{"prompt": "Then, Jose, Sarah and Tyler went to the station. Jose and Tyler gave a kiss to", "correct_label": " Sarah", "model_predict": " the", "id": 1864}
+{"prompt": "Afterwards Jeremy, Sara and Jamie went to the station. Jeremy and Jamie gave a ring to", "correct_label": " Sara", "model_predict": " Jeremy", "id": 1866}
+{"prompt": "Then, Brian, Heather and Amber went to the garden. Brian and Amber gave a necklace to", "correct_label": " Heather", "model_predict": " Brian", "id": 1867}
+{"prompt": "Friends Timothy, Kelly and Samantha went to the store. Timothy and Samantha gave a snack to", "correct_label": " Kelly", "model_predict": " the", "id": 1868}
+{"prompt": "Friends Jonathan, Kristen and Mary went to the restaurant. Jonathan and Mary gave a kiss to", "correct_label": " Kristen", "model_predict": " the", "id": 1869}
+{"prompt": "Afterwards Allison, Nathan and Joseph went to the store. Allison and Joseph gave a snack to", "correct_label": " Nathan", "model_predict": " Joseph", "id": 1871}
+{"prompt": "Friends Nicole, Samuel and Amanda went to the hospital. Nicole and Amanda gave a bone to", "correct_label": " Samuel", "model_predict": " the", "id": 1872}
+{"prompt": "When Melissa, Tyler and Joseph arrived at the hospital, Melissa and Joseph gave a drink to", "correct_label": " Tyler", "model_predict": " the", "id": 1873}
+{"prompt": "Afterwards Amy, Samantha and Travis went to the station. Amy and Travis gave a bone to", "correct_label": " Samantha", "model_predict": " Amy", "id": 1875}
+{"prompt": "When Jesse, Alexander and Rachel arrived at the garden, Jesse and Rachel gave a bone to", "correct_label": " Alexander", "model_predict": " Rachel", "id": 1876}
+{"prompt": "Then, Mary, Kyle and Eric went to the school. Mary and Eric gave a kiss to", "correct_label": " Kyle", "model_predict": " Mary", "id": 1877}
+{"prompt": "Then, Jessica, Lauren and Vanessa went to the station. Jessica and Vanessa gave a bone to", "correct_label": " Lauren", "model_predict": " the", "id": 1879}
+{"prompt": "When Katie, Christopher and Lisa arrived at the station, Katie and Lisa gave a bone to", "correct_label": " Christopher", "model_predict": " the", "id": 1880}
+{"prompt": "Friends Joseph, Adam and Paul went to the garden. Joseph and Paul gave a bone to", "correct_label": " Adam", "model_predict": " Joseph", "id": 1883}
+{"prompt": "Friends Richard, Christina and Steven went to the station. Richard and Steven gave a ring to", "correct_label": " Christina", "model_predict": " the", "id": 1884}
+{"prompt": "Friends Brandon, Sarah and Jonathan went to the station. Brandon and Jonathan gave a drink to", "correct_label": " Sarah", "model_predict": " the", "id": 1885}
+{"prompt": "Afterwards Angela, Tyler and Adam went to the garden. Angela and Adam gave a kiss to", "correct_label": " Tyler", "model_predict": " each", "id": 1886}
+{"prompt": "Afterwards Patrick, Nathan and Kimberly went to the restaurant. Patrick and Kimberly gave a ring to", "correct_label": " Nathan", "model_predict": " Patrick", "id": 1887}
+{"prompt": "Afterwards Kyle, Katie and Brittany went to the hospital. Kyle and Brittany gave a drink to", "correct_label": " Katie", "model_predict": " Kyle", "id": 1891}
+{"prompt": "When Steven, Lindsey and Nicholas arrived at the house, Steven and Nicholas gave a kiss to", "correct_label": " Lindsey", "model_predict": " the", "id": 1892}
+{"prompt": "Then, Christopher, Kelly and Christina went to the station. Christopher and Christina gave a ring to", "correct_label": " Kelly", "model_predict": " the", "id": 1894}
+{"prompt": "Friends Kevin, Brandon and James went to the restaurant. Kevin and James gave a computer to", "correct_label": " Brandon", "model_predict": " Kevin", "id": 1895}
+{"prompt": "Friends Travis, Patrick and Christine went to the store. Travis and Christine gave a bone to", "correct_label": " Patrick", "model_predict": " the", "id": 1897}
+{"prompt": "Afterwards Eric, Christopher and Jacob went to the office. Eric and Jacob gave a basketball to", "correct_label": " Christopher", "model_predict": " Eric", "id": 1898}
+{"prompt": "Afterwards Jesse, Erin and Ashley went to the hospital. Jesse and Ashley gave a basketball to", "correct_label": " Erin", "model_predict": " Jesse", "id": 1901}
+{"prompt": "Friends Shannon, Christine and Danielle went to the school. Shannon and Danielle gave a necklace to", "correct_label": " Christine", "model_predict": " the", "id": 1902}
+{"prompt": "Then, Kyle, Dustin and Lindsey went to the station. Kyle and Lindsey gave a snack to", "correct_label": " Dustin", "model_predict": " Kyle", "id": 1903}
+{"prompt": "Then, Laura, Alicia and Patrick went to the store. Laura and Patrick gave a necklace to", "correct_label": " Alicia", "model_predict": " Laura", "id": 1904}
+{"prompt": "Afterwards Dustin, Christopher and Alexander went to the restaurant. Dustin and Alexander gave a computer to", "correct_label": " Christopher", "model_predict": " Dustin", "id": 1905}
+{"prompt": "Afterwards Bryan, Sara and Megan went to the school. Bryan and Megan gave a bone to", "correct_label": " Sara", "model_predict": " Megan", "id": 1907}
+{"prompt": "Afterwards Stephanie, Christopher and Bradley went to the house. Stephanie and Bradley gave a snack to", "correct_label": " Christopher", "model_predict": " Stephanie", "id": 1908}
+{"prompt": "Then, Stephanie, Allison and Rachel went to the restaurant. Stephanie and Rachel gave a computer to", "correct_label": " Allison", "model_predict": " Stephanie", "id": 1909}
+{"prompt": "Afterwards Matthew, Katie and Cody went to the house. Matthew and Cody gave a computer to", "correct_label": " Katie", "model_predict": " Matthew", "id": 1910}
+{"prompt": "Friends Crystal, Tyler and Stephen went to the store. Crystal and Stephen gave a basketball to", "correct_label": " Tyler", "model_predict": " Crystal", "id": 1911}
+{"prompt": "When Brian, Kyle and Stephen arrived at the garden, Brian and Stephen gave a bone to", "correct_label": " Kyle", "model_predict": " the", "id": 1912}
+{"prompt": "Then, David, Brian and Angela went to the store. David and Angela gave a bone to", "correct_label": " Brian", "model_predict": " Angela", "id": 1914}
+{"prompt": "Friends Jacob, Kenneth and Stephen went to the restaurant. Jacob and Stephen gave a kiss to", "correct_label": " Kenneth", "model_predict": " the", "id": 1915}
+{"prompt": "Friends Aaron, Crystal and Patrick went to the store. Aaron and Patrick gave a bone to", "correct_label": " Crystal", "model_predict": " the", "id": 1916}
+{"prompt": "Then, Alicia, Adam and Jeffrey went to the house. Alicia and Jeffrey gave a necklace to", "correct_label": " Adam", "model_predict": " Alicia", "id": 1917}
+{"prompt": "Then, Ashley, Vanessa and Laura went to the school. Ashley and Laura gave a basketball to", "correct_label": " Vanessa", "model_predict": " the", "id": 1919}
+{"prompt": "Then, Amanda, Emily and Ashley went to the school. Amanda and Ashley gave a drink to", "correct_label": " Emily", "model_predict": " the", "id": 1920}
+{"prompt": "Afterwards Brian, Samuel and Rebecca went to the house. Brian and Rebecca gave a snack to", "correct_label": " Samuel", "model_predict": " the", "id": 1921}
+{"prompt": "Friends Justin, Jamie and Sara went to the store. Justin and Sara gave a drink to", "correct_label": " Jamie", "model_predict": " the", "id": 1922}
+{"prompt": "Afterwards Ryan, Shannon and Charles went to the hospital. Ryan and Charles gave a necklace to", "correct_label": " Shannon", "model_predict": " Ryan", "id": 1923}
+{"prompt": "Afterwards Christina, Kristen and Christine went to the garden. Christina and Christine gave a snack to", "correct_label": " Kristen", "model_predict": " the", "id": 1924}
+{"prompt": "Then, Lauren, Alexander and Erin went to the station. Lauren and Erin gave a kiss to", "correct_label": " Alexander", "model_predict": " the", "id": 1926}
+{"prompt": "Friends Daniel, Dustin and Travis went to the store. Daniel and Travis gave a necklace to", "correct_label": " Dustin", "model_predict": " the", "id": 1927}
+{"prompt": "Afterwards Timothy, Mark and Rebecca went to the store. Timothy and Rebecca gave a bone to", "correct_label": " Mark", "model_predict": " Timothy", "id": 1928}
+{"prompt": "Afterwards Nicholas, Christina and Kristen went to the garden. Nicholas and Kristen gave a ring to", "correct_label": " Christina", "model_predict": " Nicholas", "id": 1930}
+{"prompt": "Friends Thomas, Nathan and Brandon went to the hospital. Thomas and Brandon gave a computer to", "correct_label": " Nathan", "model_predict": " Thomas", "id": 1931}
+{"prompt": "Afterwards Megan, Kelly and Ashley went to the garden. Megan and Ashley gave a computer to", "correct_label": " Kelly", "model_predict": " Megan", "id": 1932}
+{"prompt": "Afterwards Scott, Jennifer and Lauren went to the hospital. Scott and Lauren gave a kiss to", "correct_label": " Jennifer", "model_predict": " Scott", "id": 1933}
+{"prompt": "Afterwards Thomas, Megan and Danielle went to the office. Thomas and Danielle gave a bone to", "correct_label": " Megan", "model_predict": " Danielle", "id": 1934}
+{"prompt": "When Jeremy, Sarah and Brian arrived at the station, Jeremy and Brian gave a ring to", "correct_label": " Sarah", "model_predict": " Jeremy", "id": 1936}
+{"prompt": "When Paul, Jeffrey and Jose arrived at the station, Paul and Jose gave a kiss to", "correct_label": " Jeffrey", "model_predict": " the", "id": 1937}
+{"prompt": "Friends Brittany, Tiffany and Richard went to the restaurant. Brittany and Richard gave a drink to", "correct_label": " Tiffany", "model_predict": " the", "id": 1938}
+{"prompt": "When Jose, Lisa and Rebecca arrived at the school, Jose and Rebecca gave a drink to", "correct_label": " Lisa", "model_predict": " the", "id": 1939}
+{"prompt": "Friends Adam, Thomas and Rachel went to the school. Adam and Rachel gave a ring to", "correct_label": " Thomas", "model_predict": " the", "id": 1940}
+{"prompt": "Friends Rebecca, Mary and Amber went to the station. Rebecca and Amber gave a snack to", "correct_label": " Mary", "model_predict": " the", "id": 1942}
+{"prompt": "When Nicole, Patrick and Erin arrived at the store, Nicole and Erin gave a snack to", "correct_label": " Patrick", "model_predict": " the", "id": 1944}
+{"prompt": "When Bradley, Lauren and Erica arrived at the station, Bradley and Erica gave a basketball to", "correct_label": " Lauren", "model_predict": " the", "id": 1945}
+{"prompt": "Afterwards Sarah, Adam and Jamie went to the office. Sarah and Jamie gave a ring to", "correct_label": " Adam", "model_predict": " Sarah", "id": 1946}
+{"prompt": "Afterwards Richard, Kristen and Laura went to the garden. Richard and Laura gave a drink to", "correct_label": " Kristen", "model_predict": " Richard", "id": 1947}
+{"prompt": "Friends David, Paul and Rachel went to the hospital. David and Rachel gave a basketball to", "correct_label": " Paul", "model_predict": " Rachel", "id": 1948}
+{"prompt": "Afterwards Shannon, Tiffany and Vanessa went to the office. Shannon and Vanessa gave a kiss to", "correct_label": " Tiffany", "model_predict": " Shannon", "id": 1949}
+{"prompt": "Friends Danielle, Jesse and Jonathan went to the school. Danielle and Jonathan gave a computer to", "correct_label": " Jesse", "model_predict": " the", "id": 1953}
+{"prompt": "When Jacob, Megan and Thomas arrived at the office, Jacob and Thomas gave a ring to", "correct_label": " Megan", "model_predict": " the", "id": 1955}
+{"prompt": "Then, Courtney, Sarah and Steven went to the office. Courtney and Steven gave a bone to", "correct_label": " Sarah", "model_predict": " Steven", "id": 1956}
+{"prompt": "Afterwards Amy, Jonathan and Gregory went to the restaurant. Amy and Gregory gave a drink to", "correct_label": " Jonathan", "model_predict": " Amy", "id": 1957}
+{"prompt": "Friends Sean, Tyler and Brittany went to the office. Sean and Brittany gave a snack to", "correct_label": " Tyler", "model_predict": " Sean", "id": 1958}
+{"prompt": "Afterwards Rebecca, Alicia and William went to the store. Rebecca and William gave a ring to", "correct_label": " Alicia", "model_predict": " Rebecca", "id": 1959}
+{"prompt": "Friends Christopher, Andrea and Matthew went to the school. Christopher and Matthew gave a necklace to", "correct_label": " Andrea", "model_predict": " the", "id": 1960}
+{"prompt": "Then, Stephanie, Christine and Lindsay went to the restaurant. Stephanie and Lindsay gave a bone to", "correct_label": " Christine", "model_predict": " the", "id": 1961}
+{"prompt": "Afterwards Lindsey, Dustin and Vanessa went to the office. Lindsey and Vanessa gave a basketball to", "correct_label": " Dustin", "model_predict": " Lindsey", "id": 1962}
+{"prompt": "Then, Dustin, Stephen and Jamie went to the house. Dustin and Jamie gave a snack to", "correct_label": " Stephen", "model_predict": " Dustin", "id": 1963}
+{"prompt": "When Danielle, Patrick and Heather arrived at the office, Danielle and Heather gave a kiss to", "correct_label": " Patrick", "model_predict": " each", "id": 1965}
+{"prompt": "Friends Mark, Angela and Heather went to the garden. Mark and Heather gave a kiss to", "correct_label": " Angela", "model_predict": " each", "id": 1966}
+{"prompt": "When Brian, Nicholas and Daniel arrived at the restaurant, Brian and Daniel gave a drink to", "correct_label": " Nicholas", "model_predict": " the", "id": 1967}
+{"prompt": "When Amanda, Jessica and Lindsay arrived at the office, Amanda and Lindsay gave a kiss to", "correct_label": " Jessica", "model_predict": " each", "id": 1968}
+{"prompt": "Afterwards Kenneth, Amanda and Brandon went to the hospital. Kenneth and Brandon gave a kiss to", "correct_label": " Amanda", "model_predict": " each", "id": 1969}
+{"prompt": "When Michael, John and Kelly arrived at the station, Michael and Kelly gave a basketball to", "correct_label": " John", "model_predict": " Michael", "id": 1970}
+{"prompt": "When Crystal, Gregory and Samuel arrived at the garden, Crystal and Samuel gave a ring to", "correct_label": " Gregory", "model_predict": " the", "id": 1971}
+{"prompt": "When Kelly, Steven and Nicholas arrived at the school, Kelly and Nicholas gave a snack to", "correct_label": " Steven", "model_predict": " the", "id": 1972}
+{"prompt": "When Eric, Amber and Allison arrived at the station, Eric and Allison gave a ring to", "correct_label": " Amber", "model_predict": " the", "id": 1974}
+{"prompt": "When Rachel, Amanda and Christina arrived at the store, Rachel and Christina gave a bone to", "correct_label": " Amanda", "model_predict": " the", "id": 1975}
+{"prompt": "Then, Stephanie, Jesse and Lindsey went to the store. Stephanie and Lindsey gave a bone to", "correct_label": " Jesse", "model_predict": " the", "id": 1976}
+{"prompt": "Then, Thomas, Kyle and Timothy went to the office. Thomas and Timothy gave a snack to", "correct_label": " Kyle", "model_predict": " Thomas", "id": 1978}
+{"prompt": "When Andrea, Sean and Paul arrived at the house, Andrea and Paul gave a necklace to", "correct_label": " Sean", "model_predict": " Andrea", "id": 1979}
+{"prompt": "Afterwards Matthew, Jose and Jeffrey went to the hospital. Matthew and Jeffrey gave a snack to", "correct_label": " Jose", "model_predict": " the", "id": 1980}
+{"prompt": "When Laura, Robert and Michael arrived at the station, Laura and Michael gave a kiss to", "correct_label": " Robert", "model_predict": " each", "id": 1981}
+{"prompt": "Then, Jessica, Danielle and Jose went to the house. Jessica and Jose gave a ring to", "correct_label": " Danielle", "model_predict": " Jessica", "id": 1982}
+{"prompt": "Friends Ashley, Sarah and Travis went to the store. Ashley and Travis gave a snack to", "correct_label": " Sarah", "model_predict": " the", "id": 1983}
+{"prompt": "Afterwards Robert, John and Megan went to the restaurant. Robert and Megan gave a basketball to", "correct_label": " John", "model_predict": " Robert", "id": 1985}
+{"prompt": "Then, Dustin, Scott and Heather went to the office. Dustin and Heather gave a snack to", "correct_label": " Scott", "model_predict": " Dustin", "id": 1987}
+{"prompt": "Then, Nathan, Shannon and Dustin went to the office. Nathan and Dustin gave a computer to", "correct_label": " Shannon", "model_predict": " Nathan", "id": 1988}
+{"prompt": "Friends Vanessa, Jesse and Erica went to the garden. Vanessa and Erica gave a drink to", "correct_label": " Jesse", "model_predict": " the", "id": 1991}
+{"prompt": "Afterwards Charles, John and Richard went to the house. Charles and Richard gave a computer to", "correct_label": " John", "model_predict": " Charles", "id": 1992}
+{"prompt": "Friends Michelle, Amanda and Jose went to the restaurant. Michelle and Jose gave a kiss to", "correct_label": " Amanda", "model_predict": " each", "id": 1994}
+{"prompt": "When Anthony, Laura and Erica arrived at the house, Anthony and Erica gave a drink to", "correct_label": " Laura", "model_predict": " the", "id": 1995}
+{"prompt": "Afterwards Timothy, David and Crystal went to the restaurant. Timothy and Crystal gave a kiss to", "correct_label": " David", "model_predict": " Timothy", "id": 1996}
+{"prompt": "When Daniel, Alicia and Crystal arrived at the house, Daniel and Crystal gave a snack to", "correct_label": " Alicia", "model_predict": " Daniel", "id": 1997}
+{"prompt": "Friends Nathan, Vanessa and Amy went to the hospital. Nathan and Amy gave a kiss to", "correct_label": " Vanessa", "model_predict": " each", "id": 1998}
+{"prompt": "Friends Cody, Thomas and Sarah went to the garden. Cody and Sarah gave a ring to", "correct_label": " Thomas", "model_predict": " Cody", "id": 1999}
